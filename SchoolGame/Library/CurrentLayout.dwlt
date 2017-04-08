@@ -19,7 +19,11 @@ MonoBehaviour:
     height: 997
   m_ShowMode: 4
   m_Title: 
+<<<<<<< HEAD
   m_RootView: {fileID: 4}
+=======
+  m_RootView: {fileID: 2}
+>>>>>>> origin/master
   m_MinSize: {x: 950, y: 492}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
@@ -92,7 +96,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 492}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &5
 MonoBehaviour:
@@ -427,10 +431,17 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -164.6875
     m_HBaseRangeMax: 164.6875
     m_VBaseRangeMin: -263.5
     m_VBaseRangeMax: 263.5
+=======
+    m_HBaseRangeMin: -391.5
+    m_HBaseRangeMax: 391.5
+    m_VBaseRangeMin: -261
+    m_VBaseRangeMax: 261
+>>>>>>> origin/master
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -496,6 +507,7 @@ MonoBehaviour:
     width: 940
     height: 361
   m_SceneLighting: 1
+<<<<<<< HEAD
   lastFramingTime: 77403.79618492404
   m_2DMode: 0
   m_isRotationLocked: 0
@@ -504,6 +516,16 @@ MonoBehaviour:
     m_Target: {x: -5.79, y: 9.24, z: -3.91}
     speed: 2
     m_Value: {x: -5.79, y: 9.24, z: -3.91}
+=======
+  lastFramingTime: 50.98827211014461
+  m_2DMode: 1
+  m_isRotationLocked: 0
+  m_AudioPlay: 0
+  m_Position:
+    m_Target: {x: -1.8329865, y: 8.725243, z: -0.97265625}
+    speed: 2
+    m_Value: {x: -1.8329865, y: 8.725243, z: -0.97265625}
+>>>>>>> origin/master
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -530,9 +552,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.0030701435, y: -0.87375325, z: 0.0055122827, w: -0.4863285}
   m_Size:
+<<<<<<< HEAD
     m_Target: 30.418516
     speed: 2
     m_Value: 30.418516
+=======
+    m_Target: 32.697514
+    speed: 2
+    m_Value: 32.697514
+>>>>>>> origin/master
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -630,9 +658,15 @@ MonoBehaviour:
     height: 467
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 9c770000
     m_LastClickedID: 30620
     m_ExpandedIDs: d6a0fdffd8a1fdff96a2fdffa0a2fdffc4a2fdffcaa2fdff74a3fdff7ca3fdff56b3fdff52b4fdff10b5fdff1ab5fdff3eb5fdff44b5fdffeeb5fdfff6b5fdff4cbcfdfff8bffdfff8c0fdffdec3fdff18c5fdffd6c5fdffe0c5fdff04c6fdff12c6fdff18c6fdff20c6fdff6e71feffc078fefff279feffb07afeffba7afeffde7afeffe47afeff8e7bfeff967bfeff888bfeff8e8cfeff948dfeff9a8efefffe90feff3a92fefff892feff0293feff2693feff3293feffe293feffe893feff8c07ffffdc1dffff5420ffff7821ffff3622ffff4022ffff6422ffff6a22ffff1423ffff1c23ffff4835ffff9e38ffff323bffff4c3cffff0a3dffff143dffff383dffff443dffff4a3dffff523dffff6041ffffb462ffff8c63ffff9064ffff2a89fffff49fffff5ccbffffa6cbffffc0d2ffffb4deffff0cf3ffffd0f4ffffd4fbffff00000000142b0000d43a0000c84000003e460000c64c0000684d0000ca5d0000
+=======
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 0cfaffff00000000
+>>>>>>> origin/master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -697,13 +731,17 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\GitHub\PKKYschoolGame\PKKYschoolGame\SchoolGame
+  m_LastProjectPath: C:\PKKYschoolGame\SchoolGame
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 48250000
     m_LastClickedID: 9544
+<<<<<<< HEAD
     m_ExpandedIDs: 000000000a25000030250000362500004025000044250000622500007625000096250000a0250000b8250000be250000e6250000fe250000482600005a26000060260000682600006e260000a4260000ae260000b2260000ba260000
+=======
+    m_ExpandedIDs: 00000000b8260000f6260000022700005e270000ee270000f0270000
+>>>>>>> origin/master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -731,7 +769,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 000000000a250000302500003625000044250000622500007625000096250000a0250000be250000e6250000fe250000482600005a260000602600006e260000a4260000ae260000b2260000ba260000
+=======
+    m_ExpandedIDs: 00000000b8260000f6260000022700005e270000ee270000f0270000
+>>>>>>> origin/master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
