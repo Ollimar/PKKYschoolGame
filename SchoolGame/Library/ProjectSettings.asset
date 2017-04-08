@@ -6,7 +6,7 @@ PlayerSettings:
   serializedVersion: 11
   productGUID: 58442c1f211b2c943af1e642c153b5e0
   AndroidProfiler: 0
-  defaultScreenOrientation: 2
+  defaultScreenOrientation: 4
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
@@ -588,7 +588,7 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled: {}
-  facebookSdkVersion: 7.9.1
+  facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: ff548ac9-c74b-425d-b988-e51923afbae1
   projectName: SchoolGame
