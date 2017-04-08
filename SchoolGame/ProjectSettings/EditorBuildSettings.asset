@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Levels/CharacterCreation.unity
+    path: Assets/Levels/OpeningScene.unity
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Levels/CharacterCreation.unity
+    guid: ead8d9a81d52e014fac73600faee4f05
+  - enabled: 1
+    path: Assets/Levels/WorldMap.unity
+    guid: 6aab236a6719c6141a78276e0dc1ad16
   - enabled: 1
     path: Assets/Levels/TestLevel.unity
     guid: a44a75ea70bd25941857f4d53466702a
