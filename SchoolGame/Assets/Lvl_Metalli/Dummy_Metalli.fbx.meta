@@ -26,6 +26,7 @@ ModelImporter:
     100036: Steel
     100038: Topdoor
     100040: Wall
+    100042: Steel.001
     400000: Cube.007
     400002: Cube.008
     400004: Cube.009
@@ -47,6 +48,7 @@ ModelImporter:
     400036: Steel
     400038: Topdoor
     400040: Wall
+    400042: Steel.001
     2300000: Cube.007
     2300002: Cube.008
     2300004: Cube.009
@@ -67,6 +69,7 @@ ModelImporter:
     2300034: Steel
     2300036: Topdoor
     2300038: Wall
+    2300040: Steel.001
     3300000: Cube.007
     3300002: Cube.008
     3300004: Cube.009
@@ -87,6 +90,7 @@ ModelImporter:
     3300034: Steel
     3300036: Topdoor
     3300038: Wall
+    3300040: Steel.001
     4300000: Cube.016
     4300002: Cube.015
     4300004: Cube.013
@@ -107,6 +111,7 @@ ModelImporter:
     4300034: MidWall
     4300036: Human
     4300038: Steel
+    4300040: Steel.001
   materials:
     importMaterials: 1
     materialName: 0
