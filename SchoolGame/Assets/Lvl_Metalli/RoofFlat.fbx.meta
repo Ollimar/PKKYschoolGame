@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: a868cbb0200fb5f4eaa762051d4e39df
-timeCreated: 1491690652
+guid: 283d89af6ff8bd6499655b2e93bf0002
+timeCreated: 1491903242
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Wall
+    4300000: RoofFlat
   materials:
     importMaterials: 1
     materialName: 0
