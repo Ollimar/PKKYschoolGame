@@ -7,9 +7,6 @@ public class CharacterCustomization : MonoBehaviour {
 
     public Image fadeScreen;
 
-    public bool canRotate = false;
-    public bool canRotateLeft = false;
-
     public float rotAmount = 0;
     public float dif = 0.5f;
     public int rotDirection = 1;

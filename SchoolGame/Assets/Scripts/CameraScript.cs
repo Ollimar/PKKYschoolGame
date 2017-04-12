@@ -9,18 +9,23 @@ public class CameraScript : MonoBehaviour {
 
     public float smoothTime = 1f;
     public float cameraOffsetX = 5f;
-   // public float cameraOffsetY = 5f;
     public float cameraDepth = -10f;
     public PlayerMovement playerMovement;
 
     public bool xPlus = true;
     public bool xMinus = false;
 
+    public bool paused;
+    public Canvas pauseMenu;
+    public Animator pauseMenuAnim;
+
 	
 	void Start () 
     {
         target = GameObject.Find( "Player" ).transform;
         playerMovement = GameObject.Find( "Player" ).GetComponent<PlayerMovement>();
+        pauseMenu.enabled = false;
+        pauseMenuAnim = pauseMenu.GetComponentInChildren<Animator>();
 	}
 	
 	
@@ -44,4 +49,25 @@ public class CameraScript : MonoBehaviour {
         }
        
 	}
+
+    public void Pause() 
+    {
+        if(!paused) {
+            pauseMenu.enabled = true;
+            paused = true;
+            pauseMenuAnim.SetBool("Touched", true);
+            //Time.timeScale = 0f;
+        }
+        else {
+            pauseMenu.enabled = false;
+            paused = false;
+            pauseMenuAnim.SetBool("Touched", false);
+            //Time.timeScale = 1f;
+        }
+        
+    }
+
+    public void ToMenu() {
+        Application.LoadLevel( "WorldMap" );
+    }
 }
