@@ -47,7 +47,7 @@ public class ScriptWorldMap : MonoBehaviour
                 }
             }
 
-         if ( hit.transform.tag == "ground" ) 
+         if ( hit.transform.tag == "ground" && Input.touchCount <= 1) 
             {
                 if(Input.GetMouseButtonDown(0)) 
                 {

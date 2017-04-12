@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour {
 
     public Transform maxCam;
     public Transform minCam;
+    public float camDistance = 1f;
     public Transform camTargetY;
     public Transform targetPoint;
 
@@ -51,14 +52,14 @@ public class PlayerMovement : MonoBehaviour {
 
         if(this.transform.position.x >= maxCam.position.x) {
             maxCam.position = new Vector3(transform.position.x, maxCam.position.y, maxCam.position.z);
-            minCam.position = new Vector3( maxCam.position.x - 5f, minCam.position.y, minCam.position.z );
+            minCam.position = new Vector3( maxCam.position.x - camDistance, minCam.position.y, minCam.position.z );
             cameraScript.xPlus = true;
             cameraScript.xMinus = false;
         }
 
         if(this.transform.position.x <= minCam.position.x) {
             minCam.position =  new Vector3(transform.position.x, maxCam.position.y, maxCam.position.z);
-            maxCam.position = new Vector3( minCam.position.x + 5f, minCam.position.y, minCam.position.z );
+            maxCam.position = new Vector3( minCam.position.x + camDistance, minCam.position.y, minCam.position.z );
             cameraScript.xPlus = false;
             cameraScript.xMinus = true;
         }
@@ -112,7 +113,7 @@ public class PlayerMovement : MonoBehaviour {
             myRB.velocity += jumpVelocity * Vector2.up;
 
             if (canEnterMetalliala) {
-                Application.LoadLevel("MinigameMetalli");
+                Application.LoadLevel("MinigameTest");
             }
             if(canEnterTeatteriJaEsitysTekniikka) {
                 Application.LoadLevel("MinigameTeatterJaEsitysTekniikka");
