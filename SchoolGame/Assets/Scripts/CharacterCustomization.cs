@@ -13,6 +13,8 @@ public class CharacterCustomization : MonoBehaviour {
     public int rotDirection = 1;
 
     public GameObject[] hats;
+    public Material bodyMaterial;
+    public Color myColor;
 
     private Animator anim;
     private Animator animFadeScreen;
@@ -20,7 +22,8 @@ public class CharacterCustomization : MonoBehaviour {
     private ScriptPlayerData playerData;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+    {
         anim = GetComponent<Animator>();
         animFadeScreen = fadeScreen.GetComponent<Animator>();
         playerData = GameObject.Find( "PlayerData" ).GetComponent <ScriptPlayerData> ();
@@ -28,7 +31,8 @@ public class CharacterCustomization : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+        {
 		transform.Rotate( Vector3.up * rotAmount*Time.deltaTime);
 
        if(Input.GetMouseButtonDown(0)) 
@@ -65,6 +69,18 @@ public class CharacterCustomization : MonoBehaviour {
             dif = 0f;
         }
 
+
+        Ray ray;
+        RaycastHit hit;
+
+        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        if ( Physics.Raycast( ray, out hit, Mathf.Infinity ) ) {
+            if ( hit.transform.name == "ShirtCollider" ) 
+            {
+                bodyMaterial.color = myColor;
+            }
+        }
 	}
 
     public void NextHat() {
