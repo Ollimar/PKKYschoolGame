@@ -194,6 +194,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2055389257}
+  - {fileID: 1679718809}
   - {fileID: 1013625367}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -214,6 +215,7 @@ GameObject:
   - component: {fileID: 1013625370}
   - component: {fileID: 1013625369}
   - component: {fileID: 1013625368}
+  - component: {fileID: 1013625371}
   m_Layer: 5
   m_Name: FadeImage
   m_TagString: Untagged
@@ -232,7 +234,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 66437295}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -289,6 +291,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1013625366}
+--- !u!114 &1013625371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1013625366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a283c68589e22469704498f4a773ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 3
+  kollektiweLogo: {fileID: 2055389258}
+  pkkyLogo: {fileID: 1679718810}
 --- !u!1 &1499363661
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,7 +317,6 @@ GameObject:
   - component: {fileID: 1499363664}
   - component: {fileID: 1499363663}
   - component: {fileID: 1499363662}
-  - component: {fileID: 1499363667}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -379,18 +394,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1499363667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1499363661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47a283c68589e22469704498f4a773ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: 3
 --- !u!1 &1634779083
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +459,74 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1679718808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1679718809}
+  - component: {fileID: 1679718811}
+  - component: {fileID: 1679718810}
+  m_Layer: 5
+  m_Name: PKKY
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1679718809
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679718808}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.31820837, y: 0.31820837, z: 0.31820837}
+  m_Children: []
+  m_Father: {fileID: 66437295}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0000095367, y: 27}
+  m_SizeDelta: {x: 870, y: 869.69}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1679718810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679718808}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 0d4b2f0ff010ce24d9781cf9d8f3e4e3, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1679718811
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679718808}
 --- !u!1 &1683544646
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,7 +600,7 @@ GameObject:
   - component: {fileID: 2055389259}
   - component: {fileID: 2055389258}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Kollektiwe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

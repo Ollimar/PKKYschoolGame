@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour {
     public float speed = 10f;
     public float jumpVelocity = 10f;
 
+    public bool canControl = true;
     public bool facingRight = true;
     public bool isGrounded = false;
     public bool canMoveInAir = true;
@@ -27,6 +28,7 @@ public class PlayerMovement : MonoBehaviour {
     public Transform minCam;
     public float camDistance = 1f;
     public Transform camTargetY;
+    public float yOffset = 3f;
     public Transform targetPoint;
 
     float hInput = 0f;
@@ -44,7 +46,7 @@ public class PlayerMovement : MonoBehaviour {
     void Update() 
         {
 
-        camTargetY.position = Vector3.Lerp(camTargetY.position,new Vector3(targetPoint.position.x,targetPoint.position.y+5f,targetPoint.position.z),4f*Time.deltaTime);
+        camTargetY.position = Vector3.Lerp(camTargetY.position,new Vector3(targetPoint.position.x,targetPoint.position.y+yOffset,targetPoint.position.z),4f*Time.deltaTime);
 
         if(Input.GetButtonDown("Jump") && isGrounded) {
             Jump();
@@ -73,6 +75,8 @@ public class PlayerMovement : MonoBehaviour {
     {
         isGrounded = Physics2D.OverlapCircle(circlePos.position,circleRadius,whatIsGround);
 
+        if(canControl) 
+        {
         #if !UNITY_ANDROID
         Move( Input.GetAxisRaw( "Horizontal" ) );
         if(Input.GetAxisRaw( "Horizontal" ) > 0.1 && !facingRight) {
@@ -85,7 +89,7 @@ public class PlayerMovement : MonoBehaviour {
         #else
         Move( hInput );
         #endif
-
+        }
     }
 
     void  Move(float horizontalInput) 
@@ -108,7 +112,7 @@ public class PlayerMovement : MonoBehaviour {
 
     public void Jump() {
 
-        if(isGrounded) 
+        if(isGrounded && canControl) 
         {
             myRB.velocity += jumpVelocity * Vector2.up;
 

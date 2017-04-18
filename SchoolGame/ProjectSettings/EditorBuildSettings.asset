@@ -5,11 +5,11 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Levels/OpeningScene.unity
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/OpeningScene.unity
+    guid: 7592e1ba9519fa743ad630d30c9bfbb8
+  - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
     guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/CharacterCreation.unity
@@ -18,11 +18,8 @@ EditorBuildSettings:
     path: Assets/Scenes/WorldMap.unity
     guid: 6aab236a6719c6141a78276e0dc1ad16
   - enabled: 1
-    path: Assets/Scenes/TestLevel.unity
+    path: Assets/Scenes/Metalliala.unity
     guid: a44a75ea70bd25941857f4d53466702a
-  - enabled: 1
-    path: Assets/Scenes/MinigameMetalli.unity
-    guid: c54f8f7efc7066344a34c9253fca90a5
   - enabled: 1
     path: Assets/Scenes/MinigameTeatterJaEsitysTekniikka.unity
     guid: f75b4359ce5fa8b43af4cced53dc7b67

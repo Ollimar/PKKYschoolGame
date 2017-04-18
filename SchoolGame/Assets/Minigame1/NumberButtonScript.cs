@@ -43,7 +43,7 @@ public class NumberButtonScript : MonoBehaviour {
         if(shrink) 
         {
             ringImage.enabled = true;
-            ringImage.transform.localScale -= new Vector3(shrinkSpeed,shrinkSpeed,shrinkSpeed)*Time.deltaTime;
+            ringImage.transform.localScale -= new Vector3(1f,1f,1f)*Time.deltaTime;
         }
 
         if(ringImage.transform.localScale.x <= 0f) 
@@ -52,12 +52,19 @@ public class NumberButtonScript : MonoBehaviour {
         }
 	}
 
+    public void Spawn() {
+        timer = 0f;
+        ringImage.transform.localScale = new Vector3( shrinkSpeed, shrinkSpeed, shrinkSpeed );
+    }
+
     public void Score() 
     {
         if(scriptMiniGameTest.tapCount == number) 
         {
                 scriptMiniGameTest.tapCount += 1;
                 scriptMiniGameTest.score += 100;
+                scriptMiniGameTest.scoreText.text = "SCORE: " + scriptMiniGameTest.score.ToString();
+                scriptMiniGameTest.bar.fillAmount = scriptMiniGameTest.bar.fillAmount + 0.05f;
                 GameObject win;
                 win = Instantiate( successEffect, transform.position, transform.rotation );
                 win.transform.parent = myCanvas.transform;
@@ -71,6 +78,7 @@ public class NumberButtonScript : MonoBehaviour {
         {
                 scriptMiniGameTest.tapCount += 1;
                 scriptMiniGameTest.score += 100;
+                scriptMiniGameTest.scoreText.text = "SCORE: " + scriptMiniGameTest.score.ToString();
                 gameObject.SetActive( false );
         }
     }
