@@ -6,22 +6,33 @@ using UnityEngine.UI;
 public class CharacterCustomization : MonoBehaviour {
 
     public Image fadeScreen;
+    public InputField nameField;
 
     public float rotAmount = 0;
     public float dif = 0.5f;
     public int rotDirection = 1;
 
+    public GameObject[] hats;
+    public Material bodyMaterial;
+    public Color myColor;
+
     private Animator anim;
     private Animator animFadeScreen;
 
+    private ScriptPlayerData playerData;
+
 	// Use this for initialization
-	void Start () {
+	void Start () 
+    {
         anim = GetComponent<Animator>();
         animFadeScreen = fadeScreen.GetComponent<Animator>();
+        playerData = GameObject.Find( "PlayerData" ).GetComponent <ScriptPlayerData> ();
+        nameField.text = null;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+        {
 		transform.Rotate( Vector3.up * rotAmount*Time.deltaTime);
 
        if(Input.GetMouseButtonDown(0)) 
@@ -58,10 +69,44 @@ public class CharacterCustomization : MonoBehaviour {
             dif = 0f;
         }
 
+
+        Ray ray;
+        RaycastHit hit;
+
+        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        if ( Physics.Raycast( ray, out hit, Mathf.Infinity ) ) {
+            if ( hit.transform.name == "ShirtCollider" ) 
+            {
+                bodyMaterial.color = myColor;
+            }
+        }
 	}
 
+    public void NextHat() {
+        hats[0].SetActive(false);
+        hats[1].SetActive(true);
+    }
+
+    public void PrevHat() {
+        hats[0].SetActive(true);
+        hats[1].SetActive(false);
+    }
+
     public void Done() {
-        anim.SetBool("Done",true);
+
+      if(nameField.text == null) 
+      {
+            print( "Please name your character" );
+            return;
+      }
+      else 
+      {
+            playerData.playerName = nameField.text;
+            anim.SetBool("Done",true);
+      }  
+
+
     }
 
     public void FadeScreen() {

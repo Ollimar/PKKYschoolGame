@@ -16,16 +16,34 @@ public class ScriptWorldMap : MonoBehaviour
     public bool pointerToggle = false;
 
     public Canvas metallialaImage;
+    public Canvas teatterEsitekImage;
+    public GameObject menu;
+
+    public Text playerName;
+
     public Animator MetallialaAnim;
+    public Animator teatterEsitekAnim;
 
     public float zoomSpeed = .5f;
     public float minZoom = 11f;
     public float maxZoom = 4f;
 
+    private ScriptPlayerData playerData;
+
 	void Start () 
     {
         metallialaImage.enabled = false;
         MetallialaAnim = GameObject.Find( "MetallialaImage" ).GetComponent<Animator>();
+
+        teatterEsitekImage.enabled = false;
+        teatterEsitekAnim = GameObject.Find( "TeatterEsitekImage" ).GetComponent<Animator>();
+
+        menu = GameObject.Find( "Menu" );
+        menu.SetActive(false);
+
+        playerData = GameObject.Find( "PlayerData" ).GetComponent<ScriptPlayerData>();
+        playerName.text = playerData.name.ToString();
+        
 	}
 	
 	void Update () 
@@ -44,6 +62,15 @@ public class ScriptWorldMap : MonoBehaviour
                 {
                     metallialaImage.enabled = true;
                     MetallialaAnim.SetBool( "Touched", true );
+                }
+            }
+
+             if ( hit.transform.name == "Teatteri&Esitystekniikka" ) 
+            {
+                if(Input.GetMouseButtonDown(0)) 
+                {
+                    teatterEsitekImage.enabled = true;
+                    teatterEsitekAnim.SetBool( "Touched", true );
                 }
             }
 
@@ -115,6 +142,16 @@ public class ScriptWorldMap : MonoBehaviour
         transform.position = new Vector3(position.x,Camera.main.transform.position.y,position.z);
     }
 
+    public void MenuOpen() 
+    {
+        menu.SetActive( true );
+    }
+
+    public void MenuClose() 
+    {
+        menu.SetActive( false );
+    }
+
     public void closeMetalliala() 
     {
            metallialaImage.enabled = false;
@@ -123,6 +160,6 @@ public class ScriptWorldMap : MonoBehaviour
 
     public void EnterMetalliala() 
     {
-        Application.LoadLevel("TestLevel");
+        Application.LoadLevel("Metalliala");
     }
 }
