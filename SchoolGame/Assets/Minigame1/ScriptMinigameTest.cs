@@ -26,6 +26,17 @@ public class ScriptMinigameTest : MonoBehaviour {
     public bool parsec1 = true;
     public bool parsec2 = true;
     public bool parsec3 = true;
+    public bool parsec4 = true;
+    public bool parsec5 = true;
+    public bool parsec6 = true;
+    public bool parsec7 = true;
+    public bool parsec8 = true;
+    public bool parsec9 = true;
+    public bool parsec10 = true;
+    public bool parsec11 = true;
+    public bool parsec12 = true;
+    public bool parsec13 = true;
+    public bool parsec14 = true;
 
     public float timer;
 
@@ -63,7 +74,7 @@ public class ScriptMinigameTest : MonoBehaviour {
 
         if(!paused && !win) 
         {
-            bar.fillAmount -= Time.deltaTime/50f;
+            bar.fillAmount -= Time.deltaTime/100f;
         }
 
         if(bar.fillAmount <= 0f) 
@@ -103,30 +114,117 @@ public class ScriptMinigameTest : MonoBehaviour {
         if(timer >= interval1 && timer < interval2 && parsec1 == true) 
         {
             numbers[0].SetActive( true );
-            numbers[1].SetActive( true );
-            numbers[2].SetActive( true );
             parsec1 = false;
             timer = 0f;
+            tapCount = 1;
+
         }
 
         if(timer >= interval1 && timer < interval2 && parsec2 == true && parsec1 == false) 
         {
-            numbers[3].SetActive( true );
-            numbers[4].SetActive( true );
-            numbers[5].SetActive( true );
+            numbers[0].SetActive( true );
+            numbers[0].GetComponent<NumberButtonScript>().timer = 0f;
             parsec2 = false;
+            timer = 0f;
+            tapCount = 1;
+        }
+
+        if(timer >= interval1 && timer < interval2 && parsec3 == true && parsec2 == false) 
+        {
+            numbers[0].SetActive( true );
+            numbers[0].GetComponent<NumberButtonScript>().timer = 0f;
+            parsec3 = false;
+            timer = 0f;
+            tapCount = 1;
+        }
+
+        if(timer >= interval1 && timer < interval2 && parsec4 == true && parsec3 == false) 
+        {
+            numbers[0].SetActive( true );
+            numbers[0].GetComponent<NumberButtonScript>().timer = 0f;
+            parsec4 = false;
+            timer = 0f;
+            tapCount = 1;
+        }
+
+        if(timer >=interval1 && timer < interval2 && parsec5 == true &&  parsec4 == false) 
+        {
+            tapCount = 1;
+            numbers[0].SetActive( true );
+            numbers[0].GetComponent<NumberButtonScript>().timer = 0f; 
+            numbers[0].GetComponent<RectTransform>().localPosition = new Vector2( -249f, 0f );  
+            numbers[1].SetActive( true );
+            numbers[2].SetActive( true );
+            parsec5 = false;
             timer = 0f;
         }
 
-        if(timer >=interval1 && timer < interval2 && parsec3 == true &&  parsec2 == false) 
+        if(timer >=interval1 && timer < interval2 && parsec6 == true &&  parsec5 == false) 
         {
-            transitions[0].SetActive( true );
-            numbers[6].SetActive( true );
-            numbers[7].SetActive( true );
-            parsec1 = true;
-            parsec2 = true;
-            parsec3 = true;
+            numbers[3].SetActive( true ); 
+            numbers[3].GetComponent<NumberButtonScript>().timer = 0f;
+            numbers[4].SetActive( true );
+            numbers[5].SetActive( true );
+            parsec6 = false;
             timer = 0f;
+        }
+
+        if(timer >=9 && timer < interval2 && parsec7 == true &&  parsec6 == false) 
+        {
+            tapCount = 1;
+            numbers[0].SetActive( true );
+            numbers[0].GetComponent<NumberButtonScript>().timer = 0f; 
+            numbers[0].GetComponent<RectTransform>().localPosition = new Vector2( 249f, 0f );
+            numbers[1].SetActive( true );
+            numbers[1].GetComponent<NumberButtonScript>().timer = 0f;
+            numbers[1].GetComponent<NumberButtonScript>().transition = true;
+            numbers[1].GetComponent<RectTransform>().localPosition = new Vector2( -249f, 0f ); 
+            for(int i = 0; i < transitions.Length; i++ ) 
+            {
+                transitions[i].SetActive( true );
+                transitions[i].GetComponent<TransitionButtonScript>().goalNumber = numbers[1];
+            }
+            parsec7 = false;
+            timer = 0f;
+            tapCount = 1;
+        }
+
+        if(timer >=interval1 && timer < interval2 && parsec8 == true &&  parsec7 == false) 
+        {
+
+            win = true;
+
+            /*
+            tapCount = 1;
+            numbers[0].SetActive( true );
+            numbers[0].GetComponent<NumberButtonScript>().timer = 0f; 
+            numbers[0].GetComponent<RectTransform>().localPosition = new Vector2( -249f, -372f );
+            numbers[1].SetActive( true );
+            numbers[1].GetComponent<NumberButtonScript>().transitions = 0;
+            numbers[1].GetComponent<NumberButtonScript>().timer = 0f;
+            numbers[1].GetComponent<NumberButtonScript>().transition = true;
+            numbers[1].GetComponent<RectTransform>().localPosition = new Vector2( 249f, -372f ); 
+
+            for(int i = 0; i < transitions.Length; i++ ) 
+            {
+                transitions[i].SetActive( true );
+                transitions[i].GetComponent<TransitionButtonScript>().goalNumber = numbers[1];
+            }
+
+            transitions[0].GetComponent<TransitionButtonScript>().transitionNumber = 0;
+            transitions[1].GetComponent<TransitionButtonScript>().transitionNumber = 1;
+            transitions[2].GetComponent<TransitionButtonScript>().transitionNumber = 2;
+            transitions[3].GetComponent<TransitionButtonScript>().transitionNumber = 3;
+
+            transitions[0].GetComponent<RectTransform>().localPosition = new Vector2(GetComponent<RectTransform>().localPosition.x, -539f);
+            transitions[1].GetComponent<RectTransform>().localPosition = new Vector2(GetComponent<RectTransform>().localPosition.x, -539f);
+            transitions[2].GetComponent<RectTransform>().localPosition = new Vector2(GetComponent<RectTransform>().localPosition.x, -539f);
+            transitions[3].GetComponent<RectTransform>().localPosition = new Vector2(GetComponent<RectTransform>().localPosition.x, -539f);
+
+            parsec8 = false;
+            timer = 0f;
+            tapCount = 1;
+            */
         }
 	}
 
@@ -171,8 +269,8 @@ public class ScriptMinigameTest : MonoBehaviour {
         }
     }
 
-    public void Retry() {
-
+    public void Retry() 
+    {
         Application.LoadLevel("MinigameTest");
     }
 
@@ -184,6 +282,7 @@ public class ScriptMinigameTest : MonoBehaviour {
 
     public void Win() 
     {
+        
         playerData.winMetalliMinipeli1 = true;
         Application.LoadLevel("Metalliala");
     }

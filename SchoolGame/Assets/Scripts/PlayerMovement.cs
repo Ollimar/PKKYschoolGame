@@ -117,7 +117,7 @@ public class PlayerMovement : MonoBehaviour {
             myRB.velocity += jumpVelocity * Vector2.up;
 
             if (canEnterMetalliala) {
-                Application.LoadLevel("MinigameTest");
+                Application.LoadLevel("Minipeli1Metalli");
             }
             if(canEnterTeatteriJaEsitysTekniikka) {
                 Application.LoadLevel("MinigameTeatterJaEsitysTekniikka");
