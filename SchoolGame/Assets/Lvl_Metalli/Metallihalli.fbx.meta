@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 556d9cc0b57f95f4da463119dac7a1df
-timeCreated: 1491903350
+guid: 060e1c0748abc114ea34333e3f624bf2
+timeCreated: 1492812461
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: RoofUneven
+    4300000: Dummy_Metallihalli
   materials:
     importMaterials: 1
     materialName: 0
