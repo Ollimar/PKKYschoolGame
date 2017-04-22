@@ -3673,12 +3673,15 @@ MonoBehaviour:
   parsec13: 1
   parsec14: 1
   timer: 0
+  timeMultiplier: 50
   paused: 0
   win: 0
   gameOverImage: {fileID: 1234031980}
-  gameWinImage: {fileID: 1863426646}
   yourScore: {fileID: 864964278}
   yourBest: {fileID: 1516788298}
+  gameWinImage: {fileID: 1863426646}
+  yourScoreWin: {fileID: 1368393571}
+  yourBestWin: {fileID: 598099843}
   pauseMenu: {fileID: 0}
   pauseMenuAnim: {fileID: 1634264774}
   bar: {fileID: 1266048090}

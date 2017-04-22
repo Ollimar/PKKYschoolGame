@@ -10,7 +10,9 @@ public class ScriptWorldMap : MonoBehaviour
     Vector3 currentPosition = Vector3.zero;
     Vector3 cameraPosition = Vector3.zero;
 
-    public Transform pointer;
+    public Transform pointerMetalliala;
+    public Transform pointerTeatteriEsitek;
+
     public float pointerTimer = 1f;
     public float pointerSpeed = 1f;
     public bool pointerToggle = false;
@@ -132,7 +134,8 @@ public class ScriptWorldMap : MonoBehaviour
             pointerTimer = 0.5f;
         }
 
-        pointer.Translate(Vector3.up*pointerSpeed*Time.deltaTime);
+        pointerMetalliala.Translate(Vector3.up*pointerSpeed*Time.deltaTime);
+        pointerTeatteriEsitek.Translate(Vector3.up*pointerSpeed*Time.deltaTime);
 	}
 
     void Drag() {

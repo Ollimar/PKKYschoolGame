@@ -39,15 +39,20 @@ public class ScriptMinigameTest : MonoBehaviour {
     public bool parsec14 = true;
 
     public float timer;
+    public float timeMultiplier = 150f;
 
     public bool paused = false;
     public bool win = false;
 
     // Variables for Game Over Screen
-    public GameObject gameOverImage;
-    public GameObject gameWinImage;
-    public Text yourScore;
-    public Text yourBest;
+    public GameObject   gameOverImage;
+    public Text         yourScore;
+    public Text         yourBest;
+
+    // Variables for Game Win Screen
+    public GameObject   gameWinImage;
+    public Text         yourScoreWin;
+    public Text         yourBestWin;
 
     // Variables for pause menu
     public Canvas pauseMenu;
@@ -65,6 +70,8 @@ public class ScriptMinigameTest : MonoBehaviour {
         playerData = GameObject.Find( "PlayerData" ).GetComponent<ScriptPlayerData>();
         yourBest.text = playerData.scoreMetalliMinipeli1.ToString();
         gameWinImage.SetActive( false );
+        //hiScore = playerData.scoreMetalliMinipeli1 = hiScore;
+        PlayerPrefs.GetInt( "MetalliMinipeli1HiScore", hiScore );
 	}
 	
 	// Update is called once per frame
@@ -74,7 +81,7 @@ public class ScriptMinigameTest : MonoBehaviour {
 
         if(!paused && !win) 
         {
-            bar.fillAmount -= Time.deltaTime/100f;
+            bar.fillAmount -= Time.deltaTime/timeMultiplier;
         }
 
         if(bar.fillAmount <= 0f) 
@@ -90,6 +97,18 @@ public class ScriptMinigameTest : MonoBehaviour {
         if(win) 
         {
             gameWinImage.SetActive( true );
+
+            if(score > hiScore) 
+            {
+                //playerData.scoreMetalliMinipeli1 = hiScore;
+                PlayerPrefs.SetInt("MetalliMinipeli1HiScore", hiScore);
+                PlayerPrefs.GetInt( "MetalliMinipeli1HiScore", hiScore );
+                yourScoreWin.text = score.ToString();
+                yourBestWin.text = hiScore.ToString();
+            }
+                PlayerPrefs.GetInt( "MetalliMinipeli1HiScore", hiScore );
+                yourScoreWin.text = score.ToString();
+                yourBestWin.text = hiScore.ToString();
         }
 
         Ray ray;
@@ -108,7 +127,6 @@ public class ScriptMinigameTest : MonoBehaviour {
             {
                 touchParticle.SetActive( false );
             }
-
         }
 
         if(timer >= interval1 && timer < interval2 && parsec1 == true) 
@@ -258,12 +276,16 @@ public class ScriptMinigameTest : MonoBehaviour {
         if(score > hiScore) 
         {
             hiScore = score;
+            PlayerPrefs.SetInt("MetalliMinipeli1HiScore", hiScore);
+            PlayerPrefs.GetInt( "MetalliMinipeli1HiScore", hiScore );
             yourScore.text = "SCORE: "+score.ToString();
             yourBest.text = "HI-SCORE: "+hiScore.ToString();
-            playerData.scoreMetalliMinipeli1 = hiScore;
+            //playerData.scoreMetalliMinipeli1 = hiScore;
+            
         }
         else 
         {
+            PlayerPrefs.GetInt( "MetalliMinipeli1HiScore", hiScore );
             yourScore.text = "SCORE: "+score.ToString();
             yourBest.text = "HI-SCORE: "+hiScore.ToString();
         }
@@ -271,7 +293,7 @@ public class ScriptMinigameTest : MonoBehaviour {
 
     public void Retry() 
     {
-        Application.LoadLevel("MinigameTest");
+        Application.LoadLevel("Minipeli1Metalli");
     }
 
     public void Quit() 
