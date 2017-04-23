@@ -7,14 +7,20 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: MetalliTaivutin_Pressi
+    100004: MetalliTaivutin_Pressi.001
     400000: //RootNode
     400002: MetalliTaivutin_Pressi
+    400004: MetalliTaivutin_Pressi.001
     2300000: //RootNode
     2300002: MetalliTaivutin_Pressi
+    2300004: MetalliTaivutin_Pressi.001
     3300000: //RootNode
     3300002: MetalliTaivutin_Pressi
+    3300004: MetalliTaivutin_Pressi.001
     4300000: MetalliTaivutin
     4300002: MetalliTaivutin_Pressi
+    4300004: MetalliTaivutin.001
+    4300006: MetalliTaivutin_Pressi.001
   materials:
     importMaterials: 1
     materialName: 0

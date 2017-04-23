@@ -7,14 +7,25 @@ ModelImporter:
   fileIDToRecycleName:
     100000: Nosturin_Kissa
     100002: //RootNode
+    100004: Kissa
+    100006: Nosturin_Koukku
     400000: Nosturin_Kissa
     400002: //RootNode
+    400004: Kissa
+    400006: Nosturin_Koukku
     2300000: Nosturin_Kissa
     2300002: //RootNode
+    2300004: Kissa
+    2300006: Nosturin_Koukku
     3300000: Nosturin_Kissa
     3300002: //RootNode
+    3300004: Kissa
+    3300006: Nosturin_Koukku
     4300000: Siltanosturi
     4300002: Nosturin_Kissa
+    4300004: Siltanosturi.002
+    4300006: Kissa
+    4300008: Nosturin_Koukku
   materials:
     importMaterials: 1
     materialName: 0

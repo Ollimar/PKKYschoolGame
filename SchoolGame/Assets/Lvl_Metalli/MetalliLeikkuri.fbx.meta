@@ -7,14 +7,20 @@ ModelImporter:
   fileIDToRecycleName:
     100000: Cylinder
     100002: //RootNode
+    100004: Cylinder.001
     400000: Cylinder
     400002: //RootNode
+    400004: Cylinder.001
     2300000: Cylinder
     2300002: //RootNode
+    2300004: Cylinder.001
     3300000: Cylinder
     3300002: //RootNode
+    3300004: Cylinder.001
     4300000: Rautaleikkuri
     4300002: Cylinder
+    4300004: Rautaleikkuri.001
+    4300006: Cylinder.001
   materials:
     importMaterials: 1
     materialName: 0
