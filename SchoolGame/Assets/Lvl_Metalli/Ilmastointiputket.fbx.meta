@@ -1,0 +1,149 @@
+fileFormatVersion: 2
+guid: dc404a9958cae2844802e82d0b9d237b
+timeCreated: 1492954937
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Ilmastointi_45kulma
+    100002: Ilmastointi_90kulma
+    100004: Ilmastointi_Kansi.001
+    100006: Ilmastointi_KansiHormi
+    100008: Ilmastointi_Suora
+    100010: Ilmastointi_T_Haara
+    100012: Ilmastointi_Yhaara
+    100014: //RootNode
+    100016: Ilmastointi_45
+    100018: Ilmastointi_Hormi
+    100020: Ilmastointi_Kansi
+    100022: Ilmastointi_Lyhyt
+    100024: Ilmastointi_Suora.001
+    100026: Ilmastointi_T
+    100028: Ilmastointi_Y
+    400000: Ilmastointi_45kulma
+    400002: Ilmastointi_90kulma
+    400004: Ilmastointi_Kansi.001
+    400006: Ilmastointi_KansiHormi
+    400008: Ilmastointi_Suora
+    400010: Ilmastointi_T_Haara
+    400012: Ilmastointi_Yhaara
+    400014: //RootNode
+    400016: Ilmastointi_45
+    400018: Ilmastointi_Hormi
+    400020: Ilmastointi_Kansi
+    400022: Ilmastointi_Lyhyt
+    400024: Ilmastointi_Suora.001
+    400026: Ilmastointi_T
+    400028: Ilmastointi_Y
+    2300000: Ilmastointi_45kulma
+    2300002: Ilmastointi_90kulma
+    2300004: Ilmastointi_Kansi.001
+    2300006: Ilmastointi_KansiHormi
+    2300008: Ilmastointi_Suora
+    2300010: Ilmastointi_T_Haara
+    2300012: Ilmastointi_Yhaara
+    2300014: Ilmastointi_45
+    2300016: Ilmastointi_Hormi
+    2300018: Ilmastointi_Kansi
+    2300020: Ilmastointi_Lyhyt
+    2300022: Ilmastointi_Suora.001
+    2300024: Ilmastointi_T
+    2300026: Ilmastointi_Y
+    3300000: Ilmastointi_45kulma
+    3300002: Ilmastointi_90kulma
+    3300004: Ilmastointi_Kansi.001
+    3300006: Ilmastointi_KansiHormi
+    3300008: Ilmastointi_Suora
+    3300010: Ilmastointi_T_Haara
+    3300012: Ilmastointi_Yhaara
+    3300014: Ilmastointi_45
+    3300016: Ilmastointi_Hormi
+    3300018: Ilmastointi_Kansi
+    3300020: Ilmastointi_Lyhyt
+    3300022: Ilmastointi_Suora.001
+    3300024: Ilmastointi_T
+    3300026: Ilmastointi_Y
+    4300000: Ilmastointi_Kansi.001
+    4300002: Ilmastointi_KansiHormi
+    4300004: Ilmastointi_T_Haara
+    4300006: Ilmastointi_45kulma
+    4300008: Ilmastointi_Yhaara
+    4300010: Ilmastointi_90kulma
+    4300012: Ilmastointi_Suora
+    4300014: Ilmastointi_Hormi
+    4300016: Ilmastointi_Kansi
+    4300018: Ilmastointi_Suora.001
+    4300020: Ilmastointi_45
+    4300022: Ilmastointi_T
+    4300024: Ilmastointi_Lyhyt
+    4300026: Ilmastointi_Y
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
