@@ -23,6 +23,8 @@ public class PlayerMovement : MonoBehaviour {
     private Transform myTransform;
     private Rigidbody2D myRB;
     private CameraScript cameraScript;
+    private Animator myAnim;
+    private ScriptPlayerData playerData;
 
     public Transform maxCam;
     public Transform minCam;
@@ -30,6 +32,11 @@ public class PlayerMovement : MonoBehaviour {
     public Transform camTargetY;
     public float yOffset = 3f;
     public Transform targetPoint;
+
+    public GameObject[] platforms;
+    public GameObject[] hats;
+
+    public int hatNumber;
 
     float hInput = 0f;
 
@@ -40,6 +47,21 @@ public class PlayerMovement : MonoBehaviour {
         maxCam = GameObject.Find( "MaxCam" ).transform;
         minCam = GameObject.Find( "MinCam" ).transform;
         cameraScript = GameObject.Find( "Main Camera" ).GetComponent<CameraScript>();
+        platforms = GameObject.FindGameObjectsWithTag("Platform");
+        myAnim = GetComponentInChildren<Animator>();
+        playerData = GameObject.Find( "PlayerData" ).GetComponent<ScriptPlayerData>();
+        hatNumber = playerData.hatNumber;
+
+        if(hatNumber == 1) {
+            hats[0].SetActive( true );
+            hats[1].SetActive(false);
+        }
+
+        if(hatNumber == 2) {
+            hats[0].SetActive( false );
+            hats[1].SetActive(true);
+        }
+
 
 	}
 	
@@ -47,10 +69,20 @@ public class PlayerMovement : MonoBehaviour {
         {
 
         camTargetY.position = Vector3.Lerp(camTargetY.position,new Vector3(targetPoint.position.x,targetPoint.position.y+yOffset,targetPoint.position.z),4f*Time.deltaTime);
+        if(myRB.velocity.x != 0f) {
+            myAnim.SetBool( "run", true );
+        }
+        else {
+            myAnim.SetBool("run", false);
+        }
 
         if(Input.GetButtonDown("Jump") && isGrounded) {
             Jump();
         }
+
+        myAnim.SetFloat( "yVelocity", myRB.velocity.y );
+        myAnim.SetBool( "grounded", isGrounded );
+        myAnim.SetBool( "Jump", !isGrounded );
 
         if(this.transform.position.x >= maxCam.position.x) {
             maxCam.position = new Vector3(transform.position.x, maxCam.position.y, maxCam.position.z);
@@ -69,11 +101,26 @@ public class PlayerMovement : MonoBehaviour {
             cameraScript.xPlus = false;
             cameraScript.xMinus = false;
         }
+
+        /*
+        if(myRB.velocity.y > 0.01f) {
+            for(int i=0;i<platforms.Length; i++) {
+                platforms[i].SetActive( false ); 
+            }
+        }
+        else 
+        {
+            for(int i=0;i<platforms.Length; i++) {
+                platforms[i].SetActive( true ); 
+            }
+        }
+        */
     }
 
 	void FixedUpdate () 
     {
         isGrounded = Physics2D.OverlapCircle(circlePos.position,circleRadius,whatIsGround);
+
 
         if(canControl) 
         {
@@ -114,13 +161,14 @@ public class PlayerMovement : MonoBehaviour {
 
         if(isGrounded && canControl) 
         {
+            print( "Jump" );
             myRB.velocity += jumpVelocity * Vector2.up;
 
             if (canEnterMetalliala) {
                 Application.LoadLevel("Minipeli1Metalli");
             }
             if(canEnterTeatteriJaEsitysTekniikka) {
-                Application.LoadLevel("MinigameTeatterJaEsitysTekniikka");
+                Application.LoadLevel("Minipeli2Metalli");
             }
         }
     }
@@ -167,7 +215,7 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void OnCollisionEnter2D(Collision2D other) {
-        if(other.gameObject.tag == "ground") {
+        if(other.gameObject.tag == "Platform") {
             targetPoint.position = other.transform.position;
         }
     }

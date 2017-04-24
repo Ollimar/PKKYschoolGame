@@ -1052,6 +1052,7 @@ MonoBehaviour:
   scoreMetalliMinipeli1: 0
   winMetalliMinipeli1: 0
   playerName: 
+  hatNumber: 2
 --- !u!4 &809364339
 Transform:
   m_ObjectHideFlags: 0
