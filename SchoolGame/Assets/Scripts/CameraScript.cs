@@ -37,6 +37,7 @@ public class CameraScript : MonoBehaviour {
         target = GameObject.Find( "Player" ).transform;
         playerMovement = GameObject.Find( "Player" ).GetComponent<PlayerMovement>();
         playerMovement.canControl = false;
+        playerMovement.GetComponentInChildren<CharacterCustomization>().enabled = false;
 
         pauseButton.enabled = false;
         pauseMenu.enabled = false;

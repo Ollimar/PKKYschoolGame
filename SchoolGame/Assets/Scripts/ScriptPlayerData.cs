@@ -11,6 +11,7 @@ public class ScriptPlayerData : MonoBehaviour {
     public bool winMetalliMinipeli1 = false;
 
     public string playerName;
+    public int hatNumber = 0;
 
 	// Use this for initialization
 	void Start () {

@@ -86,11 +86,13 @@ public class CharacterCustomization : MonoBehaviour {
     public void NextHat() {
         hats[0].SetActive(false);
         hats[1].SetActive(true);
+        playerData.hatNumber = 2;
     }
 
     public void PrevHat() {
         hats[0].SetActive(true);
         hats[1].SetActive(false);
+        playerData.hatNumber = 1;
     }
 
     public void Done() {

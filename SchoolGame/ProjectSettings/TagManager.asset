@@ -8,6 +8,8 @@ TagManager:
   - Metalliala
   - TeatteriEsitek
   - Hitsattava
+  - HitsausJalki
+  - Platform
   layers:
   - Default
   - TransparentFX
