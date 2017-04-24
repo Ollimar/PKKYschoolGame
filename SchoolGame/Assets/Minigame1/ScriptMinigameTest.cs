@@ -277,7 +277,7 @@ public class ScriptMinigameTest : MonoBehaviour {
         {
             hiScore = score;
             PlayerPrefs.SetInt("MetalliMinipeli1HiScore", hiScore);
-            PlayerPrefs.GetInt( "MetalliMinipeli1HiScore", hiScore );
+            //PlayerPrefs.GetInt( "MetalliMinipeli1HiScore", hiScore );
             yourScore.text = "SCORE: "+score.ToString();
             yourBest.text = "HI-SCORE: "+hiScore.ToString();
             //playerData.scoreMetalliMinipeli1 = hiScore;
@@ -285,7 +285,7 @@ public class ScriptMinigameTest : MonoBehaviour {
         }
         else 
         {
-            PlayerPrefs.GetInt( "MetalliMinipeli1HiScore", hiScore );
+            //PlayerPrefs.GetInt( "MetalliMinipeli1HiScore", hiScore );
             yourScore.text = "SCORE: "+score.ToString();
             yourBest.text = "HI-SCORE: "+hiScore.ToString();
         }

@@ -114,6 +114,7 @@ public class PlayerMovement : MonoBehaviour {
 
         if(isGrounded && canControl) 
         {
+            print( "Jump" );
             myRB.velocity += jumpVelocity * Vector2.up;
 
             if (canEnterMetalliala) {
