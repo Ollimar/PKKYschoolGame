@@ -1,0 +1,13 @@
+#T‰nne (taas) kaikki repoon kiinni p‰‰sseet -Samuel
+ -Olli
+
+K‰ytetyt mobiililaitteet:
+Samuel: Sony Xperia Z5 Premium, (Huawei Honor 7 lite)
+
+Bugiraportit:
+
+24.4:
+-Hahmo j‰‰ juoksemaan yhteen suuntaan
+-Hahmo saattaa tuplahyp‰t‰
+
+testf k k k k k k
