@@ -10,4 +10,4 @@ Bugiraportit:
 -Hahmo j‰‰ juoksemaan yhteen suuntaan
 -Hahmo saattaa tuplahyp‰t‰
 
-test
+testf k k k k k k
