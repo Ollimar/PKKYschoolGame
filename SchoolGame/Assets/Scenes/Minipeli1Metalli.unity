@@ -3943,7 +3943,7 @@ Prefab:
     - target: {fileID: 114706097773914502, guid: 03671cc1114cbfb459e016fc6bfd342e,
         type: 2}
       propertyPath: shrinkSpeed
-      value: 0.3
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 61674238487688862, guid: 03671cc1114cbfb459e016fc6bfd342e,
         type: 2}

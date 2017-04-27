@@ -50,9 +50,12 @@ public class ScriptWorldMap : MonoBehaviour
 	
 	void Update () 
      {
+        print( Input.touchCount );
 
         Ray ray;
         RaycastHit hit;
+
+        #if !UNITY_ANDROID
 
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -92,7 +95,48 @@ public class ScriptWorldMap : MonoBehaviour
                     print( "Touch" );
                 }
             }
+        #else
+
+        if(Input.touchCount > 0) 
+        {
+            ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+
+        if(Physics.Raycast(ray, out hit, Mathf.Infinity)) 
+        {
+            if ( hit.transform.tag == "Metalliala" ) 
+            {
+                    metallialaImage.enabled = true;
+                    MetallialaAnim.SetBool( "Touched", true );
+            }
+
+            if ( hit.transform.name == "Teatteri&Esitystekniikka" ) 
+            {
+                    teatterEsitekImage.enabled = true;
+                    teatterEsitekAnim.SetBool( "Touched", true );
+            }
+
+            if ( hit.transform.tag == "ground" && Input.touchCount <= 1) 
+            {
+                if(Input.GetTouch(0).phase == TouchPhase.Began)  
+                {
+                    hitPosition = Input.GetTouch( 0 ).deltaPosition;
+                    cameraPosition = new Vector3(transform.position.x,Camera.main.transform.position.y,transform.position.z);
+                    print( "Touch" );
+                    print( hitPosition );
+                }
+
+                if(Input.GetTouch(0).phase == TouchPhase.Moved || Input.GetTouch(0).phase == TouchPhase.Stationary)   
+                {
+                    currentPosition = Input.GetTouch( 0 ).deltaPosition;
+                    Drag();
+                    print( "TouchMove" );
+                    print( currentPosition );
+                }
+              }
+           }
         }
+
+        #endif
 
         //Camera Zoom
 
@@ -138,7 +182,8 @@ public class ScriptWorldMap : MonoBehaviour
         pointerTeatteriEsitek.Translate(Vector3.up*pointerSpeed*Time.deltaTime);
 	}
 
-    void Drag() {
+    void Drag() 
+    {
         Vector3 direction = Camera.main.ScreenToWorldPoint(currentPosition) - Camera.main.ScreenToWorldPoint(hitPosition);
         direction = direction * -1;
         Vector3 position = cameraPosition + direction;
@@ -155,7 +200,7 @@ public class ScriptWorldMap : MonoBehaviour
         menu.SetActive( false );
     }
 
-    public void closeMetalliala() 
+    public void CloseMetalliala() 
     {
            metallialaImage.enabled = false;
            MetallialaAnim.SetBool( "Touched", false );
@@ -164,5 +209,17 @@ public class ScriptWorldMap : MonoBehaviour
     public void EnterMetalliala() 
     {
         Application.LoadLevel("Metalliala");
+    }
+
+
+    public void CloseTeatteriJaEsitek() 
+    {
+           teatterEsitekImage.enabled = false;
+           teatterEsitekAnim.SetBool( "Touched", false );
+    }
+
+    public void EnterTeatteriJaEsitek() 
+    {
+        Application.LoadLevel("TeatteriJaEsitystekniikka");
     }
 }

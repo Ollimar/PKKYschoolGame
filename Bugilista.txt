@@ -9,3 +9,5 @@ Bugiraportit:
 24.4:
 -Hahmo j‰‰ juoksemaan yhteen suuntaan
 -Hahmo saattaa tuplahyp‰t‰
+
+testf k k k k k k
