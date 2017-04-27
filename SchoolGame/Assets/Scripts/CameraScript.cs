@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class CameraScript : MonoBehaviour {
-
     public Transform target;
     public Transform camTargetY;
 
