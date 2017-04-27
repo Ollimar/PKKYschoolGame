@@ -28,12 +28,19 @@ public class CameraScript : MonoBehaviour {
 
     public GameObject dialogueWin;
 
+    //Stars for completed minigames
+    public GameObject starCompleteMetalli1;
+    public GameObject starCompleteMetalli2;
+    public GameObject starCompleteMetalli3;
+
     private ScriptPlayerData playerData;
+    private LevelInfo levelInfo;
 	
 	void Start () 
     {
         dialogueCanvas = GameObject.Find( "_DialogueCanvas" ).GetComponent<Canvas>();
         playerData = GameObject.Find( "PlayerData" ).GetComponent<ScriptPlayerData>();
+        levelInfo = GetComponent<LevelInfo>();
         target = GameObject.Find( "Player" ).transform;
         playerMovement = GameObject.Find( "Player" ).GetComponent<PlayerMovement>();
         playerMovement.canControl = false;
@@ -67,12 +74,29 @@ public class CameraScript : MonoBehaviour {
         }
 
         dialogueText.text = "Tervetuloa "+ playerData.playerName;
-        
+
+        GameObject[] stars;
+        stars = GameObject.FindGameObjectsWithTag( "StarComplete" );
+
+        for(int i=0; i< stars.Length; i++ ) 
+        {
+            stars[i].SetActive( false );
+        }
+
+        if(playerData.winMetalliMinipeli1 == true) 
+        {
+            starCompleteMetalli1.SetActive( true );
+        }
+
+        if(playerData.winMetalliMinipeli2 == true) 
+        {
+            starCompleteMetalli2.SetActive( true );
+        }
 
 	}
 	
 	
-	void LateUpdate () 
+	void FixedUpdate () 
     {
         Vector3 playerPos = new Vector3(target.transform.position.x, transform.position.y, cameraDepth);
         Vector3 myPos = new Vector3(transform.position.x, camTargetY.position.y, transform.position.z);
@@ -119,37 +143,61 @@ public class CameraScript : MonoBehaviour {
         print( "NextText" );
         dialogueLine += 1;
         
-        if(dialogueLine == 1) {
-            dialogueText.text = "Tervetuloa " + playerData.playerName;
-        }
+        if(levelInfo.levelInfo == 1) 
+        {
+            if(dialogueLine == 1) {
+                dialogueText.text = "Tervetuloa " + playerData.playerName;
+            }
 
-        if(dialogueLine == 2) {
-            dialogueText.text = "Tervetuloa Outotecin metallihalliin!";
-        }
+            if(dialogueLine == 2) {
+                dialogueText.text = "Tervetuloa Outotecin metallihalliin!";
+            }
 
-        if (dialogueLine == 3) {
-            dialogueText.text = "Tutustu rauhassa laitteisiin ja niiden käyttöön";
-        }
+            if (dialogueLine == 3) {
+                dialogueText.text = "Tutustu rauhassa laitteisiin ja niiden käyttöön";
+            }
 
-        if (dialogueLine == 4) {
-            dialogueText.text = "Harjoittelussa voit käyttää lattialla lojuvaa rojumetallia.";
-        }
+            if (dialogueLine == 4) {
+                dialogueText.text = "Harjoittelussa voit käyttää lattialla lojuvaa rojumetallia.";
+            }
 
-        if (dialogueLine == 5) {
-            dialogueText.text = "Kunhan olet oppinut laitteiden käytön, pääset rautavarastosta hakemaan myytäväksi tarkoitettua metallia.";
-        }
+            if (dialogueLine == 5) {
+                dialogueText.text = "Kunhan olet oppinut laitteiden käytön, pääset rautavarastosta hakemaan myytäväksi tarkoitettua metallia.";
+            }
 
-        if (dialogueLine == 6) {
-            dialogueText.text = "Sinulle olisikin tilaustyö odottamassa tälle päivälle.";
-        }
+            if (dialogueLine == 6) {
+                dialogueText.text = "Sinulle olisikin tilaustyö odottamassa tälle päivälle.";
+            }
 
-        if (dialogueLine == 7) {
-            dialogueCanvas.enabled = false;
-            playerData.metallialaVisits += 1;
-            playerMovement.canControl = true;
-            pauseButton.enabled = true;
+            if (dialogueLine == 7) {
+                dialogueCanvas.enabled = false;
+                playerData.metallialaVisits += 1;
+                playerMovement.canControl = true;
+                pauseButton.enabled = true;
+            }
         }
         
+        if(levelInfo.levelInfo == 2) 
+        {
+            if(dialogueLine == 1) {
+                dialogueText.text = "Tervetuloa " + playerData.playerName;
+            }
+
+            if(dialogueLine == 2) {
+                dialogueText.text = "Tervetuloa Kulttuurihalliin!";
+            }
+
+            if (dialogueLine == 3) {
+                dialogueText.text = "Eiköhän aleta hommiin!";
+            }
+
+            if (dialogueLine == 4) {
+                dialogueCanvas.enabled = false;
+                playerData.metallialaVisits += 1;
+                playerMovement.canControl = true;
+                pauseButton.enabled = true;
+            }
+        }
     }
 
     public void DialogueOK() 

@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour {
 
     public bool canEnterMetalliala = false;
     public bool canEnterTeatteriJaEsitysTekniikka = false;
+    public bool canEnterTeatteriJaEsitysTekniikkaMG1 = false;
 
     // Variables for handling collision
     public Transform circlePos;
@@ -101,20 +102,6 @@ public class PlayerMovement : MonoBehaviour {
             cameraScript.xPlus = false;
             cameraScript.xMinus = false;
         }
-
-        /*
-        if(myRB.velocity.y > 0.01f) {
-            for(int i=0;i<platforms.Length; i++) {
-                platforms[i].SetActive( false ); 
-            }
-        }
-        else 
-        {
-            for(int i=0;i<platforms.Length; i++) {
-                platforms[i].SetActive( true ); 
-            }
-        }
-        */
     }
 
 	void FixedUpdate () 
@@ -167,8 +154,13 @@ public class PlayerMovement : MonoBehaviour {
             if (canEnterMetalliala) {
                 Application.LoadLevel("Minipeli1Metalli");
             }
+
             if(canEnterTeatteriJaEsitysTekniikka) {
                 Application.LoadLevel("Minipeli2Metalli");
+            }
+
+            if(canEnterTeatteriJaEsitysTekniikkaMG1) {
+                Application.LoadLevel("Minipeli1TeatterijaEsitysTekniikka");
             }
         }
     }
@@ -202,6 +194,10 @@ public class PlayerMovement : MonoBehaviour {
         if(other.gameObject.name == "TeatteriJaEsitystekniikkaTriggerBox") {
             canEnterTeatteriJaEsitysTekniikka = true;
         }
+
+        if(other.gameObject.name == "TeatteriJaEsitystekniikkaMG1") {
+            canEnterTeatteriJaEsitysTekniikkaMG1 = true;
+        }
     }
 
     void OnTriggerExit2D(Collider2D other) {
@@ -211,6 +207,10 @@ public class PlayerMovement : MonoBehaviour {
 
         if(other.gameObject.name == "TeatteriJaEsitystekniikkaTriggerBox") {
             canEnterTeatteriJaEsitysTekniikka = false;
+        }
+
+        if(other.gameObject.name == "TeatteriJaEsitystekniikkaMG1") {
+            canEnterTeatteriJaEsitysTekniikkaMG1 = false;
         }
     }
 

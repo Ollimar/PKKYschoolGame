@@ -10,6 +10,9 @@ TagManager:
   - Hitsattava
   - HitsausJalki
   - Platform
+  - StarComplete
+  - CutLine
+  - parent
   layers:
   - Default
   - TransparentFX
