@@ -2242,7 +2242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f725dace16f2c5f4b8b0b366603a5ed6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.11
+  speed: 0.25
   myTarget: {fileID: 0}
   points:
   - {fileID: 2117790277}
