@@ -70,7 +70,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 342}
   m_MaxSize: {x: 4004, y: 8042}
   vertical: 1
-  controlID: 116
+  controlID: 12
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 442}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 11
+  controlID: 55
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 12
+  controlID: 56
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -413,10 +413,10 @@ MonoBehaviour:
     width: 200
     height: 433
   m_TreeViewState:
-    scrollPos: {x: 0, y: 32}
-    m_SelectedIDs: f8d2ffff
-    m_LastClickedID: -11528
-    m_ExpandedIDs: fad2ffffbed3ffff2ed5ffff0ce1ffffd0e1ffff0cecfffffaecffff24eeffff96efffffc8fbffff00000000ae45000088490000
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 683d0000
+    m_LastClickedID: 15720
+    m_ExpandedIDs: fae2ffffbce8ffffc8fbffff00000000d62d0000a42f0000e23a00001a3b00002c3b0000b23b0000c03c0000123d0000443d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -435,7 +435,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
   m_ExpandedScenes:
-  - Metalliala
+  - Minipeli2Metalli
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -465,7 +465,7 @@ MonoBehaviour:
     y: 92
     width: 275
     height: 926
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 120}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 338
@@ -509,7 +509,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Lvl_Metalli/Materials
+    - Assets/Minigame1
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
@@ -520,7 +520,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: e2250000
     m_LastClickedID: 9698
-    m_ExpandedIDs: 00000000202500005a250000682500009c250000d025000004260000102600001226000044260000ac260000e82600000c270000aa2b0000d42b0000e22b0000f62b0000642c00007e2c0000862c0000b22c0000523a0000
+    m_ExpandedIDs: 00000000202500005a250000682500009c250000d02500000426000010260000122600001c2600004626000050260000ae260000ea2600000e270000ae2b0000d82b0000e62b0000fc2b00008a2c0000922c0000be2c0000683a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -548,7 +548,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000202500005a250000682500009c250000d02500000426000010260000122600001c260000442600004e260000ac260000e82600000c270000aa2b0000d42b0000e22b0000f62b00007e2c0000862c0000b22c0000523a0000
+    m_ExpandedIDs: 00000000202500005a25000068250000782500009c250000d02500000426000010260000122600001c26000046260000ae260000ea2600000e270000ae2b0000d82b0000e62b0000fc2b0000702c00008a2c0000922c0000be2c0000683a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -706,14 +706,14 @@ MonoBehaviour:
     width: 1203
     height: 631
   m_SceneLighting: 0
-  lastFramingTime: 5009.187319686984
+  lastFramingTime: 31858.851575763445
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -21.918278, y: 2.9314513, z: -4.7553215}
+    m_Target: {x: 20.630661, y: 76.383934, z: -0.07525635}
     speed: 2
-    m_Value: {x: -21.918278, y: 2.9314513, z: -4.7553215}
+    m_Value: {x: 20.630661, y: 76.383934, z: -0.07525635}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -736,13 +736,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.0025933764, y: 0.99670666, z: -0.073393084, w: 0.035901487}
+    m_Target: {x: -0.0400372, y: 0.9536908, z: 0.14704967, w: 0.25932094}
     speed: 2
-    m_Value: {x: 0.0025932386, y: 0.9966537, z: -0.07338918, w: 0.03589958}
+    m_Value: {x: -0.0400372, y: 0.9536908, z: 0.14704967, w: 0.25932094}
   m_Size:
-    m_Target: 25.742746
+    m_Target: 278.8847
     speed: 2
-    m_Value: 25.742746
+    m_Value: 278.8847
   m_Ortho:
     m_Target: 0
     speed: 2
