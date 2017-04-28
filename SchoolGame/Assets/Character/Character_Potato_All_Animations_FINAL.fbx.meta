@@ -1,0 +1,1646 @@
+fileFormatVersion: 2
+guid: 04ce0b8751894b640b64110ab703930c
+timeCreated: 1493363348
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arm1.L
+    100002: Arm1.R
+    100004: Arm2.L
+    100006: Arm2.R
+    100008: ArmatureBody
+    100010: ArmatureFace
+    100012: ArmIK.L
+    100014: ArmIK.L_end
+    100016: ArmIK.R
+    100018: ArmIK.R_end
+    100020: Brow.L
+    100022: Brow.L_end
+    100024: Brow.R
+    100026: Brow.R_end
+    100028: //RootNode
+    100030: Cheek.L
+    100032: Cheek.L_end
+    100034: Cheek.R
+    100036: Cheek.R_end
+    100038: Chest
+    100040: Ear.L
+    100042: Ear.L_end
+    100044: Ear.R
+    100046: Ear.R_end
+    100048: Eye.L
+    100050: Eye.L_end
+    100052: Eye.R
+    100054: Eye.R_end
+    100056: Face
+    100058: Face 1
+    100060: Foot.L
+    100062: Foot.L_end
+    100064: Foot.R
+    100066: Foot.R_end
+    100068: Head
+    100070: IndexFinger1.L
+    100072: IndexFinger1.R
+    100074: IndexFinger2.L
+    100076: IndexFinger2.L_end
+    100078: IndexFinger2.R
+    100080: IndexFinger2.R_end
+    100082: JawLower
+    100084: JawLower_end
+    100086: JawUpper
+    100088: JawUpper_end
+    100090: Leg.L
+    100092: Leg.R
+    100094: LegIK.L
+    100096: LegIK.L_end
+    100098: LegIK.R
+    100100: LegIK.R_end
+    100102: LittleFinger1.L
+    100104: LittleFinger1.R
+    100106: LittleFinger2.L
+    100108: LittleFinger2.L_end
+    100110: LittleFinger2.R
+    100112: LittleFinger2.R_end
+    100114: MiddleFinger1.L
+    100116: MiddleFinger1.R
+    100118: MiddleFinger2.L
+    100120: MiddleFinger2.L_end
+    100122: MiddleFinger2.R
+    100124: MiddleFinger2.R_end
+    100126: Pelvis
+    100128: Potato
+    100130: Thumb1.L
+    100132: Thumb1.R
+    100134: Thumb2.L
+    100136: Thumb2.L_end
+    100138: Thumb2.R
+    100140: Thumb2.R_end
+    100142: Tongue1
+    100144: Tongue2
+    100146: Tongue2_end
+    400000: Arm1.L
+    400002: Arm1.R
+    400004: Arm2.L
+    400006: Arm2.R
+    400008: ArmatureBody
+    400010: ArmatureFace
+    400012: ArmIK.L
+    400014: ArmIK.L_end
+    400016: ArmIK.R
+    400018: ArmIK.R_end
+    400020: Brow.L
+    400022: Brow.L_end
+    400024: Brow.R
+    400026: Brow.R_end
+    400028: //RootNode
+    400030: Cheek.L
+    400032: Cheek.L_end
+    400034: Cheek.R
+    400036: Cheek.R_end
+    400038: Chest
+    400040: Ear.L
+    400042: Ear.L_end
+    400044: Ear.R
+    400046: Ear.R_end
+    400048: Eye.L
+    400050: Eye.L_end
+    400052: Eye.R
+    400054: Eye.R_end
+    400056: Face
+    400058: Face 1
+    400060: Foot.L
+    400062: Foot.L_end
+    400064: Foot.R
+    400066: Foot.R_end
+    400068: Head
+    400070: IndexFinger1.L
+    400072: IndexFinger1.R
+    400074: IndexFinger2.L
+    400076: IndexFinger2.L_end
+    400078: IndexFinger2.R
+    400080: IndexFinger2.R_end
+    400082: JawLower
+    400084: JawLower_end
+    400086: JawUpper
+    400088: JawUpper_end
+    400090: Leg.L
+    400092: Leg.R
+    400094: LegIK.L
+    400096: LegIK.L_end
+    400098: LegIK.R
+    400100: LegIK.R_end
+    400102: LittleFinger1.L
+    400104: LittleFinger1.R
+    400106: LittleFinger2.L
+    400108: LittleFinger2.L_end
+    400110: LittleFinger2.R
+    400112: LittleFinger2.R_end
+    400114: MiddleFinger1.L
+    400116: MiddleFinger1.R
+    400118: MiddleFinger2.L
+    400120: MiddleFinger2.L_end
+    400122: MiddleFinger2.R
+    400124: MiddleFinger2.R_end
+    400126: Pelvis
+    400128: Potato
+    400130: Thumb1.L
+    400132: Thumb1.R
+    400134: Thumb2.L
+    400136: Thumb2.L_end
+    400138: Thumb2.R
+    400140: Thumb2.R_end
+    400142: Tongue1
+    400144: Tongue2
+    400146: Tongue2_end
+    4300000: Face
+    4300002: Potato
+    7400000: Wave
+    7400002: ArmatureFace|ArmatureFaceAction
+    7400004: Run
+    7400006: ArmatureBody|ArmatureBodyAction.001 (2)
+    7400008: Idle
+    7400010: JumpUp
+    7400012: JumpFloat
+    7400014: JumpLand
+    9500000: //RootNode
+    13700000: Face
+    13700002: Potato
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Wave
+      takeName: ArmatureBody|ArmatureBodyAction.001
+      firstFrame: 0
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmatureBody
+        weight: 1
+      - path: ArmatureBody/ArmIK.L
+        weight: 1
+      - path: ArmatureBody/ArmIK.L/ArmIK.L_end
+        weight: 1
+      - path: ArmatureBody/ArmIK.R
+        weight: 1
+      - path: ArmatureBody/ArmIK.R/ArmIK.R_end
+        weight: 1
+      - path: ArmatureBody/LegIK.L
+        weight: 1
+      - path: ArmatureBody/LegIK.L/LegIK.L_end
+        weight: 1
+      - path: ArmatureBody/LegIK.R
+        weight: 1
+      - path: ArmatureBody/LegIK.R/LegIK.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L/IndexFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L/IndexFinger2.L/IndexFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L/LittleFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L/LittleFinger2.L/LittleFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L/MiddleFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L/MiddleFinger2.L/MiddleFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L/Thumb2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L/Thumb2.L/Thumb2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R/IndexFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R/IndexFinger2.R/IndexFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R/LittleFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R/LittleFinger2.R/LittleFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R/MiddleFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R/MiddleFinger2.R/MiddleFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R/Thumb2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R/Thumb2.R/Thumb2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.L/Cheek.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.R/Cheek.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.L/Ear.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.R/Ear.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.L/Brow.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.R/Brow.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.L/Eye.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.R/Eye.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/JawUpper_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/JawLower
+        weight: 1
+      - path: ArmatureBody/Pelvis/JawLower/JawLower_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L/Foot.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R/Foot.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1/Tongue2
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1/Tongue2/Tongue2_end
+        weight: 1
+      - path: Face
+        weight: 1
+      - path: Potato
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ArmatureFace|ArmatureFaceAction
+      takeName: ArmatureFace|ArmatureFaceAction
+      firstFrame: 0
+      lastFrame: 599
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmatureBody
+        weight: 1
+      - path: ArmatureBody/ArmIK.L
+        weight: 1
+      - path: ArmatureBody/ArmIK.L/ArmIK.L_end
+        weight: 1
+      - path: ArmatureBody/ArmIK.R
+        weight: 1
+      - path: ArmatureBody/ArmIK.R/ArmIK.R_end
+        weight: 1
+      - path: ArmatureBody/LegIK.L
+        weight: 1
+      - path: ArmatureBody/LegIK.L/LegIK.L_end
+        weight: 1
+      - path: ArmatureBody/LegIK.R
+        weight: 1
+      - path: ArmatureBody/LegIK.R/LegIK.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L/IndexFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L/IndexFinger2.L/IndexFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L/LittleFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L/LittleFinger2.L/LittleFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L/MiddleFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L/MiddleFinger2.L/MiddleFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L/Thumb2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L/Thumb2.L/Thumb2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R/IndexFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R/IndexFinger2.R/IndexFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R/LittleFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R/LittleFinger2.R/LittleFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R/MiddleFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R/MiddleFinger2.R/MiddleFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R/Thumb2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R/Thumb2.R/Thumb2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.L/Cheek.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.R/Cheek.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.L/Ear.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.R/Ear.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.L/Brow.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.R/Brow.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.L/Eye.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.R/Eye.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/JawUpper_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/JawLower
+        weight: 1
+      - path: ArmatureBody/Pelvis/JawLower/JawLower_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L/Foot.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R/Foot.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1/Tongue2
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1/Tongue2/Tongue2_end
+        weight: 1
+      - path: Face
+        weight: 1
+      - path: Potato
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: ArmatureBody|ArmatureBodyAction.001
+      firstFrame: 181
+      lastFrame: 220
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmatureBody
+        weight: 1
+      - path: ArmatureBody/ArmIK.L
+        weight: 1
+      - path: ArmatureBody/ArmIK.L/ArmIK.L_end
+        weight: 1
+      - path: ArmatureBody/ArmIK.R
+        weight: 1
+      - path: ArmatureBody/ArmIK.R/ArmIK.R_end
+        weight: 1
+      - path: ArmatureBody/LegIK.L
+        weight: 1
+      - path: ArmatureBody/LegIK.L/LegIK.L_end
+        weight: 1
+      - path: ArmatureBody/LegIK.R
+        weight: 1
+      - path: ArmatureBody/LegIK.R/LegIK.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L/IndexFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L/IndexFinger2.L/IndexFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L/LittleFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L/LittleFinger2.L/LittleFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L/MiddleFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L/MiddleFinger2.L/MiddleFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L/Thumb2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L/Thumb2.L/Thumb2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R/IndexFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R/IndexFinger2.R/IndexFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R/LittleFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R/LittleFinger2.R/LittleFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R/MiddleFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R/MiddleFinger2.R/MiddleFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R/Thumb2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R/Thumb2.R/Thumb2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.L/Cheek.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.R/Cheek.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.L/Ear.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.R/Ear.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.L/Brow.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.R/Brow.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.L/Eye.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.R/Eye.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/JawUpper_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/JawLower
+        weight: 1
+      - path: ArmatureBody/Pelvis/JawLower/JawLower_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L/Foot.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R/Foot.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1/Tongue2
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1/Tongue2/Tongue2_end
+        weight: 1
+      - path: Face
+        weight: 1
+      - path: Potato
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ArmatureBody|ArmatureBodyAction.001 (2)
+      takeName: ArmatureBody|ArmatureBodyAction.001
+      firstFrame: 0
+      lastFrame: 647
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmatureBody
+        weight: 1
+      - path: ArmatureBody/ArmIK.L
+        weight: 1
+      - path: ArmatureBody/ArmIK.L/ArmIK.L_end
+        weight: 1
+      - path: ArmatureBody/ArmIK.R
+        weight: 1
+      - path: ArmatureBody/ArmIK.R/ArmIK.R_end
+        weight: 1
+      - path: ArmatureBody/LegIK.L
+        weight: 1
+      - path: ArmatureBody/LegIK.L/LegIK.L_end
+        weight: 1
+      - path: ArmatureBody/LegIK.R
+        weight: 1
+      - path: ArmatureBody/LegIK.R/LegIK.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L/IndexFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L/IndexFinger2.L/IndexFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L/LittleFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L/LittleFinger2.L/LittleFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L/MiddleFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L/MiddleFinger2.L/MiddleFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L/Thumb2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L/Thumb2.L/Thumb2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R/IndexFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R/IndexFinger2.R/IndexFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R/LittleFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R/LittleFinger2.R/LittleFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R/MiddleFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R/MiddleFinger2.R/MiddleFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R/Thumb2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R/Thumb2.R/Thumb2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.L/Cheek.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.R/Cheek.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.L/Ear.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.R/Ear.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.L/Brow.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.R/Brow.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.L/Eye.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.R/Eye.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/JawUpper_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/JawLower
+        weight: 1
+      - path: ArmatureBody/Pelvis/JawLower/JawLower_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L/Foot.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R/Foot.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1/Tongue2
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1/Tongue2/Tongue2_end
+        weight: 1
+      - path: Face
+        weight: 1
+      - path: Potato
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: ArmatureBody|ArmatureBodyAction.001
+      firstFrame: 469
+      lastFrame: 647
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmatureBody
+        weight: 1
+      - path: ArmatureBody/ArmIK.L
+        weight: 1
+      - path: ArmatureBody/ArmIK.L/ArmIK.L_end
+        weight: 1
+      - path: ArmatureBody/ArmIK.R
+        weight: 1
+      - path: ArmatureBody/ArmIK.R/ArmIK.R_end
+        weight: 1
+      - path: ArmatureBody/LegIK.L
+        weight: 1
+      - path: ArmatureBody/LegIK.L/LegIK.L_end
+        weight: 1
+      - path: ArmatureBody/LegIK.R
+        weight: 1
+      - path: ArmatureBody/LegIK.R/LegIK.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L/IndexFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L/IndexFinger2.L/IndexFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L/LittleFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L/LittleFinger2.L/LittleFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L/MiddleFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L/MiddleFinger2.L/MiddleFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L/Thumb2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L/Thumb2.L/Thumb2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R/IndexFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R/IndexFinger2.R/IndexFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R/LittleFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R/LittleFinger2.R/LittleFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R/MiddleFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R/MiddleFinger2.R/MiddleFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R/Thumb2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R/Thumb2.R/Thumb2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.L/Cheek.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.R/Cheek.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.L/Ear.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.R/Ear.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.L/Brow.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.R/Brow.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.L/Eye.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.R/Eye.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/JawUpper_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/JawLower
+        weight: 1
+      - path: ArmatureBody/Pelvis/JawLower/JawLower_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L/Foot.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R/Foot.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1/Tongue2
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1/Tongue2/Tongue2_end
+        weight: 1
+      - path: Face
+        weight: 1
+      - path: Potato
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: JumpUp
+      takeName: ArmatureBody|ArmatureBodyAction.001
+      firstFrame: 240
+      lastFrame: 286
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmatureBody
+        weight: 1
+      - path: ArmatureBody/ArmIK.L
+        weight: 1
+      - path: ArmatureBody/ArmIK.L/ArmIK.L_end
+        weight: 1
+      - path: ArmatureBody/ArmIK.R
+        weight: 1
+      - path: ArmatureBody/ArmIK.R/ArmIK.R_end
+        weight: 1
+      - path: ArmatureBody/LegIK.L
+        weight: 1
+      - path: ArmatureBody/LegIK.L/LegIK.L_end
+        weight: 1
+      - path: ArmatureBody/LegIK.R
+        weight: 1
+      - path: ArmatureBody/LegIK.R/LegIK.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L/IndexFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L/IndexFinger2.L/IndexFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L/LittleFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L/LittleFinger2.L/LittleFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L/MiddleFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L/MiddleFinger2.L/MiddleFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L/Thumb2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L/Thumb2.L/Thumb2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R/IndexFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R/IndexFinger2.R/IndexFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R/LittleFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R/LittleFinger2.R/LittleFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R/MiddleFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R/MiddleFinger2.R/MiddleFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R/Thumb2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R/Thumb2.R/Thumb2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.L/Cheek.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.R/Cheek.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.L/Ear.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.R/Ear.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.L/Brow.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.R/Brow.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.L/Eye.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.R/Eye.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/JawUpper_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/JawLower
+        weight: 1
+      - path: ArmatureBody/Pelvis/JawLower/JawLower_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L/Foot.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R/Foot.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1/Tongue2
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1/Tongue2/Tongue2_end
+        weight: 1
+      - path: Face
+        weight: 1
+      - path: Potato
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: JumpFloat
+      takeName: ArmatureBody|ArmatureBodyAction.001
+      firstFrame: 287
+      lastFrame: 287
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmatureBody
+        weight: 1
+      - path: ArmatureBody/ArmIK.L
+        weight: 1
+      - path: ArmatureBody/ArmIK.L/ArmIK.L_end
+        weight: 1
+      - path: ArmatureBody/ArmIK.R
+        weight: 1
+      - path: ArmatureBody/ArmIK.R/ArmIK.R_end
+        weight: 1
+      - path: ArmatureBody/LegIK.L
+        weight: 1
+      - path: ArmatureBody/LegIK.L/LegIK.L_end
+        weight: 1
+      - path: ArmatureBody/LegIK.R
+        weight: 1
+      - path: ArmatureBody/LegIK.R/LegIK.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L/IndexFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L/IndexFinger2.L/IndexFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L/LittleFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L/LittleFinger2.L/LittleFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L/MiddleFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L/MiddleFinger2.L/MiddleFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L/Thumb2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L/Thumb2.L/Thumb2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R/IndexFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R/IndexFinger2.R/IndexFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R/LittleFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R/LittleFinger2.R/LittleFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R/MiddleFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R/MiddleFinger2.R/MiddleFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R/Thumb2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R/Thumb2.R/Thumb2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.L/Cheek.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.R/Cheek.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.L/Ear.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.R/Ear.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.L/Brow.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.R/Brow.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.L/Eye.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.R/Eye.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/JawUpper_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/JawLower
+        weight: 1
+      - path: ArmatureBody/Pelvis/JawLower/JawLower_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L/Foot.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R/Foot.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1/Tongue2
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1/Tongue2/Tongue2_end
+        weight: 1
+      - path: Face
+        weight: 1
+      - path: Potato
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: JumpLand
+      takeName: ArmatureBody|ArmatureBodyAction.001
+      firstFrame: 288
+      lastFrame: 305
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ArmatureBody
+        weight: 1
+      - path: ArmatureBody/ArmIK.L
+        weight: 1
+      - path: ArmatureBody/ArmIK.L/ArmIK.L_end
+        weight: 1
+      - path: ArmatureBody/ArmIK.R
+        weight: 1
+      - path: ArmatureBody/ArmIK.R/ArmIK.R_end
+        weight: 1
+      - path: ArmatureBody/LegIK.L
+        weight: 1
+      - path: ArmatureBody/LegIK.L/LegIK.L_end
+        weight: 1
+      - path: ArmatureBody/LegIK.R
+        weight: 1
+      - path: ArmatureBody/LegIK.R/LegIK.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L/IndexFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/IndexFinger1.L/IndexFinger2.L/IndexFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L/LittleFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/LittleFinger1.L/LittleFinger2.L/LittleFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L/MiddleFinger2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/MiddleFinger1.L/MiddleFinger2.L/MiddleFinger2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L/Thumb2.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.L/Arm2.L/Thumb1.L/Thumb2.L/Thumb2.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R/IndexFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/IndexFinger1.R/IndexFinger2.R/IndexFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R/LittleFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/LittleFinger1.R/LittleFinger2.R/LittleFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R/MiddleFinger2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/MiddleFinger1.R/MiddleFinger2.R/MiddleFinger2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R/Thumb2.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Arm1.R/Arm2.R/Thumb1.R/Thumb2.R/Thumb2.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.L/Cheek.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Cheek.R/Cheek.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.L/Ear.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/Ear.R/Ear.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.L/Brow.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Brow.R/Brow.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.L/Eye.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/ArmatureFace/Face 1/Eye.R/Eye.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Chest/Head/JawUpper/JawUpper_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/JawLower
+        weight: 1
+      - path: ArmatureBody/Pelvis/JawLower/JawLower_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L/Foot.L
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.L/Foot.L/Foot.L_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R/Foot.R
+        weight: 1
+      - path: ArmatureBody/Pelvis/Leg.R/Foot.R/Foot.R_end
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1/Tongue2
+        weight: 1
+      - path: ArmatureBody/Pelvis/Tongue1/Tongue2/Tongue2_end
+        weight: 1
+      - path: Face
+        weight: 1
+      - path: Potato
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
