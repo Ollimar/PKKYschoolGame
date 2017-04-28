@@ -6,10 +6,54 @@ ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Dummy_Metallihalli
+    100004: Dummy_Metallihalli.002
+    100006: Dummy_Metallihalli.003
+    100008: Dummy_Metallihalli.004
+    100010: Dummy_Metallihalli.005
+    100012: Dummy_Metallihalli.006
+    100014: Dummy_Metallihalli.007
+    100016: Dummy_Metallihalli.008
+    100018: Dummy_Metallihalli.009
     400000: //RootNode
+    400002: Dummy_Metallihalli
+    400004: Dummy_Metallihalli.002
+    400006: Dummy_Metallihalli.003
+    400008: Dummy_Metallihalli.004
+    400010: Dummy_Metallihalli.005
+    400012: Dummy_Metallihalli.006
+    400014: Dummy_Metallihalli.007
+    400016: Dummy_Metallihalli.008
+    400018: Dummy_Metallihalli.009
     2300000: //RootNode
+    2300002: Dummy_Metallihalli
+    2300004: Dummy_Metallihalli.002
+    2300006: Dummy_Metallihalli.003
+    2300008: Dummy_Metallihalli.004
+    2300010: Dummy_Metallihalli.005
+    2300012: Dummy_Metallihalli.006
+    2300014: Dummy_Metallihalli.007
+    2300016: Dummy_Metallihalli.008
+    2300018: Dummy_Metallihalli.009
     3300000: //RootNode
+    3300002: Dummy_Metallihalli
+    3300004: Dummy_Metallihalli.002
+    3300006: Dummy_Metallihalli.003
+    3300008: Dummy_Metallihalli.004
+    3300010: Dummy_Metallihalli.005
+    3300012: Dummy_Metallihalli.006
+    3300014: Dummy_Metallihalli.007
+    3300016: Dummy_Metallihalli.008
+    3300018: Dummy_Metallihalli.009
     4300000: Dummy_Metallihalli
+    4300002: Dummy_Metallihalli.009
+    4300004: Dummy_Metallihalli.008
+    4300006: Dummy_Metallihalli.007
+    4300008: Dummy_Metallihalli.006
+    4300010: Dummy_Metallihalli.005
+    4300012: Dummy_Metallihalli.004
+    4300014: Dummy_Metallihalli.003
+    4300016: Dummy_Metallihalli.002
   materials:
     importMaterials: 1
     materialName: 0
