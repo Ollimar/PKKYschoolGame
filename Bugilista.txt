@@ -1,5 +1,9 @@
-#T‰nne (taas) kaikki repoon kiinni p‰‰sseet -Samuel
+#T‰nne (taas) kaikki repoon kiinni p‰‰sseet
+
+ -Samuel
  -Olli
+ -Jere
+ -OlliK
 
 K‰ytetyt mobiililaitteet:
 Samuel: Sony Xperia Z5 Premium, (Huawei Honor 7 lite)
