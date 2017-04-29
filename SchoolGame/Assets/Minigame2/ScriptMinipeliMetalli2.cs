@@ -85,11 +85,7 @@ public class ScriptMinipeliMetalli2 : MonoBehaviour {
                     Instantiate( jalki, new Vector3( hit.point.x, hit.point.y, -0.5f ), transform.rotation );
                     jalki.transform.parent = parent.transform;
                 } 
-                
-                else 
-                {
-                    touchParticle.SetActive( false );
-                }
+
             }
 
             if ( hit.transform.tag == "HitsausJalki" ) 
@@ -97,10 +93,16 @@ public class ScriptMinipeliMetalli2 : MonoBehaviour {
                     if ( Input.touchCount > 0 ) 
                     {
                         print( "hitsaan" );
-                        hit.transform.localScale += new Vector3( 0.1f, 0.1f, 0.1f )*Time.deltaTime;
+                        if(hit.transform.localScale.x < 1f) {
+                            hit.transform.localScale += new Vector3( 0.1f, 0.1f, 0.1f )*Time.deltaTime;
+                        } 
                     }
                 }
             }
+        }
+        else 
+        {
+            touchParticle.SetActive( false );
         }
     }
 

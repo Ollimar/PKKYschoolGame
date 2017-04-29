@@ -14,7 +14,20 @@ public class CharacterCustomization : MonoBehaviour {
 
     public GameObject[] hats;
     public Material bodyMaterial;
-    public Color myColor;
+    public Material pantsMaterial;
+
+    public Color myColor1;
+    public Color myColor2;
+    public Color myColor3;
+    public Color myColor4;
+    public Color myColor5;
+    public Color myColor6;
+    public Color myColor7;
+    public Color myColor8;
+    public Color myColor9;
+
+    public GameObject bodyColor;
+    public GameObject pantsColor;
 
     private Animator anim;
     private Animator animFadeScreen;
@@ -28,11 +41,15 @@ public class CharacterCustomization : MonoBehaviour {
         animFadeScreen = fadeScreen.GetComponent<Animator>();
         playerData = GameObject.Find( "PlayerData" ).GetComponent <ScriptPlayerData> ();
         nameField.text = null;
+        bodyColor = GameObject.Find( "BodyColors" );
+        bodyColor.SetActive(false);
+        pantsColor = GameObject.Find( "PantsColors" );
+        pantsColor.SetActive( false );
 	}
 	
 	// Update is called once per frame
 	void Update () 
-        {
+    {
 		transform.Rotate( Vector3.up * rotAmount*Time.deltaTime);
 
        if(Input.GetMouseButtonDown(0)) 
@@ -73,14 +90,34 @@ public class CharacterCustomization : MonoBehaviour {
         Ray ray;
         RaycastHit hit;
 
-        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
 
+
+        if(Input.touchCount>0) 
+        {
         if ( Physics.Raycast( ray, out hit, Mathf.Infinity ) ) {
             if ( hit.transform.name == "ShirtCollider" ) 
             {
-                bodyMaterial.color = myColor;
+                print("Click Shirt");
+                bodyColor.SetActive(true);
+                pantsColor.SetActive(false);
+            }
+
+            if ( hit.transform.name == "PantsCollider" ) 
+            {
+                print("Click Pants");
+                bodyColor.SetActive(false);
+                pantsColor.SetActive(true);
+            }
+
+            if ( hit.transform.name == "BGRCollider" ) 
+            {
+                bodyColor.SetActive(false);
+                pantsColor.SetActive(false);
             }
         }
+      }
+
 	}
 
     public void NextHat() {
@@ -109,6 +146,97 @@ public class CharacterCustomization : MonoBehaviour {
       }  
 
 
+    }
+
+    public void ChangeShirtColor1() 
+    {
+       bodyMaterial.color = myColor1;      
+    }
+
+    public void ChangeShirtColor2() 
+    {
+        bodyMaterial.color = myColor2;
+    }
+
+    public void ChangeShirtColor3() 
+    {
+        bodyMaterial.color = myColor3;
+    }
+
+    public void ChangeShirtColor4() 
+    {
+        bodyMaterial.color = myColor4;
+    }
+
+    public void ChangeShirtColor5() 
+    {
+        bodyMaterial.color = myColor5;
+    }
+
+    public void ChangeShirtColor6() 
+    {
+        bodyMaterial.color = myColor6;
+    }
+
+    public void ChangeShirtColor7() 
+    {
+        bodyMaterial.color = myColor7;
+    }
+
+    public void ChangeShirtColor8() 
+    {
+        bodyMaterial.color = myColor8;
+    }
+
+    public void ChangeShirtColor9() 
+    {
+        bodyMaterial.color = myColor9;
+    }
+
+    //Define pants color
+    public void ChangePantsColor1() 
+    {
+       pantsMaterial.color = myColor1;      
+    }
+
+    public void ChangePantsColor2() 
+    {
+        pantsMaterial.color = myColor2;
+    }
+
+    public void ChangePantsColor3() 
+    {
+        pantsMaterial.color = myColor3;
+    }
+
+    public void ChangePantsColor4() 
+    {
+        pantsMaterial.color = myColor4;
+    }
+
+    public void ChangePantsColor5() 
+    {
+        pantsMaterial.color = myColor5;
+    }
+
+    public void ChangePantsColor6() 
+    {
+        pantsMaterial.color = myColor6;
+    }
+
+    public void ChangePantsColor7() 
+    {
+        pantsMaterial.color = myColor7;
+    }
+
+    public void ChangePantsColor8() 
+    {
+        pantsMaterial.color = myColor8;
+    }
+
+    public void ChangePantsColor9() 
+    {
+        pantsMaterial.color = myColor9;
     }
 
     public void FadeScreen() {

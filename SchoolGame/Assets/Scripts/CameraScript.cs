@@ -35,6 +35,7 @@ public class CameraScript : MonoBehaviour {
     private ScriptPlayerData playerData;
     private LevelInfo levelInfo;
 	
+
 	void Start () 
     {
         dialogueCanvas = GameObject.Find( "_DialogueCanvas" ).GetComponent<Canvas>();
@@ -54,6 +55,10 @@ public class CameraScript : MonoBehaviour {
         dialogueAnim = dialogueCanvas.GetComponentInChildren<Animator>();
         dialogueAnim.SetBool( "Touched", true );
         */
+
+        //Set initial camera position
+        camTargetY.position = new Vector3(camTargetY.position.x,2.464565f,camTargetY.position.z);
+        transform.position = new Vector3(55.50998f,2.464565f,4.000003f);
 
         if(playerData.metallialaVisits < 1) 
         {

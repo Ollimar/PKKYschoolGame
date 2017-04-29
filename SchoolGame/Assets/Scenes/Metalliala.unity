@@ -782,7 +782,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 04ce0b8751894b640b64110ab703930c, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100028, guid: 04ce0b8751894b640b64110ab703930c, type: 3}
       propertyPath: m_Name
@@ -825,7 +825,18 @@ MonoBehaviour:
   rotDirection: 1
   hats: []
   bodyMaterial: {fileID: 2100000, guid: 3a2dab911b933da48b61887ec0047b0e, type: 2}
-  myColor: {r: 0, g: 0, b: 0, a: 0}
+  pantsMaterial: {fileID: 0}
+  myColor1: {r: 0, g: 0, b: 0, a: 0}
+  myColor2: {r: 0, g: 0, b: 0, a: 0}
+  myColor3: {r: 0, g: 0, b: 0, a: 0}
+  myColor4: {r: 0, g: 0, b: 0, a: 0}
+  myColor5: {r: 0, g: 0, b: 0, a: 0}
+  myColor6: {r: 0, g: 0, b: 0, a: 0}
+  myColor7: {r: 0, g: 0, b: 0, a: 0}
+  myColor8: {r: 0, g: 0, b: 0, a: 0}
+  myColor9: {r: 0, g: 0, b: 0, a: 0}
+  bodyColor: {fileID: 0}
+  pantsColor: {fileID: 0}
 --- !u!1001 &117944989
 Prefab:
   m_ObjectHideFlags: 0
@@ -13209,7 +13220,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.36}
+  m_Offset: {x: 0.01, y: -0.36}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -13220,7 +13231,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 1.23}
+  m_Size: {x: 0.78, y: 1.23}
   m_EdgeRadius: 0
 --- !u!23 &2066456712
 MeshRenderer:
@@ -13268,7 +13279,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2066456708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.51, y: 1.67, z: -4.79}
+  m_LocalPosition: {x: 54.51, y: 1.01, z: -4.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 54099077}
