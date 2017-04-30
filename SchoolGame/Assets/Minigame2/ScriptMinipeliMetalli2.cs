@@ -67,7 +67,7 @@ public class ScriptMinipeliMetalli2 : MonoBehaviour {
         Ray ray;
         RaycastHit hit;
 
-        if(Input.touchCount>0) 
+        if(Input.touchCount>0 && target.GetComponent<Target>().go == true) 
         {
 
         ray = Camera.main.ScreenPointToRay( Input.GetTouch(0).position );
@@ -85,11 +85,7 @@ public class ScriptMinipeliMetalli2 : MonoBehaviour {
                     Instantiate( jalki, new Vector3( hit.point.x, hit.point.y, -0.5f ), transform.rotation );
                     jalki.transform.parent = parent.transform;
                 } 
-                
-                else 
-                {
-                    touchParticle.SetActive( false );
-                }
+
             }
 
             if ( hit.transform.tag == "HitsausJalki" ) 
@@ -97,10 +93,25 @@ public class ScriptMinipeliMetalli2 : MonoBehaviour {
                     if ( Input.touchCount > 0 ) 
                     {
                         print( "hitsaan" );
-                        hit.transform.localScale += new Vector3( 0.1f, 0.1f, 0.1f )*Time.deltaTime;
+                        if(hit.transform.localScale.x < 1f) {
+                            hit.transform.localScale += new Vector3( 0.1f, 0.1f, 0.1f )*Time.deltaTime;
+                        } 
+                    }
+                }
+
+            // Maybe try RayCastAll for hitting target as well?
+                if ( hit.transform.name == "Target" ) 
+                {
+                    if ( Input.touchCount > 0 ) 
+                    {
+                        print( "correct" );
                     }
                 }
             }
+        }
+        else 
+        {
+            touchParticle.SetActive( false );
         }
     }
 
@@ -110,12 +121,14 @@ public class ScriptMinipeliMetalli2 : MonoBehaviour {
             pauseMenu.enabled = true;
             paused = true;
             pauseMenuAnim.SetBool("Touched", true);
+            target.GetComponent<Target>().go = false;
             //Time.timeScale = 0f;
         }
         else {
             pauseMenu.enabled = false;
             paused = false;
             pauseMenuAnim.SetBool("Touched", false);
+            target.GetComponent<Target>().go = true;
             //Time.timeScale = 1f;
         }
         

@@ -490,7 +490,7 @@ Prefab:
     - target: {fileID: 114310326057759614, guid: bfc913f175fe6914887e8bb731ef416c,
         type: 2}
       propertyPath: shrinkSpeed
-      value: 0.2
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 61088725064935796, guid: bfc913f175fe6914887e8bb731ef416c,
         type: 2}
@@ -760,7 +760,7 @@ Prefab:
     - target: {fileID: 114885555442166148, guid: 0ec3ed263cf522443b2a0cd086efaa8d,
         type: 2}
       propertyPath: shrinkSpeed
-      value: 0.2
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 61379187561128386, guid: 0ec3ed263cf522443b2a0cd086efaa8d,
         type: 2}
@@ -986,7 +986,7 @@ Prefab:
     - target: {fileID: 114666261261337816, guid: 639c5774d12a1e54f86daea7f5724ece,
         type: 2}
       propertyPath: shrinkSpeed
-      value: 0.2
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 61952893861262664, guid: 639c5774d12a1e54f86daea7f5724ece,
         type: 2}
@@ -1132,7 +1132,7 @@ Prefab:
     - target: {fileID: 114885555442166148, guid: 0ec3ed263cf522443b2a0cd086efaa8d,
         type: 2}
       propertyPath: shrinkSpeed
-      value: 0.2
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 61379187561128386, guid: 0ec3ed263cf522443b2a0cd086efaa8d,
         type: 2}
@@ -2326,7 +2326,7 @@ Prefab:
     - target: {fileID: 114732485253505886, guid: 7179e26a45d357745a1fda95ecc5160e,
         type: 2}
       propertyPath: shrinkSpeed
-      value: 0.2
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 61861706012273292, guid: 7179e26a45d357745a1fda95ecc5160e,
         type: 2}
@@ -2774,7 +2774,7 @@ Prefab:
     - target: {fileID: 114885555442166148, guid: 0ec3ed263cf522443b2a0cd086efaa8d,
         type: 2}
       propertyPath: shrinkSpeed
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 61379187561128386, guid: 0ec3ed263cf522443b2a0cd086efaa8d,
         type: 2}
@@ -3451,6 +3451,7 @@ RectTransform:
   - {fileID: 1340802034}
   - {fileID: 56121215}
   - {fileID: 1778527470}
+  - {fileID: 1229562961}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3654,10 +3655,14 @@ MonoBehaviour:
   - {fileID: 1340802033}
   - {fileID: 56121214}
   - {fileID: 1778527469}
+  maxX: 346.9999
+  maxY: 384
+  minX: -342
+  minY: -589.53
   touchParticle: {fileID: 1035810168}
   isHolding: 0
-  interval1: 5
-  interval2: 10
+  interval1: 3
+  interval2: 5
   parsec1: 1
   parsec2: 1
   parsec3: 1
@@ -3673,7 +3678,10 @@ MonoBehaviour:
   parsec13: 1
   parsec14: 1
   timer: 0
+  startTimer: 0
   timeMultiplier: 50
+  gameCounter: {fileID: 0}
+  startGame: 0
   paused: 0
   win: 0
   gameOverImage: {fileID: 1234031980}
@@ -3943,7 +3951,7 @@ Prefab:
     - target: {fileID: 114706097773914502, guid: 03671cc1114cbfb459e016fc6bfd342e,
         type: 2}
       propertyPath: shrinkSpeed
-      value: 0.2
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 61674238487688862, guid: 03671cc1114cbfb459e016fc6bfd342e,
         type: 2}
@@ -3994,6 +4002,80 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03671cc1114cbfb459e016fc6bfd342e, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1229562960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1229562961}
+  - component: {fileID: 1229562963}
+  - component: {fileID: 1229562962}
+  m_Layer: 5
+  m_Name: StartCountDown
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1229562961
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1229562960}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1135756943}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.0000038147}
+  m_SizeDelta: {x: 443.9, y: 83.2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1229562962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1229562960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.1102941, g: 0.089935556, b: 0.0048659146, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 60
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 97
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1229562963
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1229562960}
 --- !u!1 &1234031980
 GameObject:
   m_ObjectHideFlags: 0
@@ -4126,7 +4208,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
 --- !u!222 &1266048091
@@ -4549,7 +4631,7 @@ Prefab:
     - target: {fileID: 114885555442166148, guid: 0ec3ed263cf522443b2a0cd086efaa8d,
         type: 2}
       propertyPath: shrinkSpeed
-      value: 0.2
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 61379187561128386, guid: 0ec3ed263cf522443b2a0cd086efaa8d,
         type: 2}
@@ -4881,7 +4963,7 @@ Prefab:
     - target: {fileID: 114980663045035848, guid: 9b1790258d3d1fc43aa0e50586671543,
         type: 2}
       propertyPath: shrinkSpeed
-      value: 0.2
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 61173305885971498, guid: 9b1790258d3d1fc43aa0e50586671543,
         type: 2}
@@ -5935,7 +6017,7 @@ Prefab:
     - target: {fileID: 114885555442166148, guid: 0ec3ed263cf522443b2a0cd086efaa8d,
         type: 2}
       propertyPath: shrinkSpeed
-      value: 0.2
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 61379187561128386, guid: 0ec3ed263cf522443b2a0cd086efaa8d,
         type: 2}

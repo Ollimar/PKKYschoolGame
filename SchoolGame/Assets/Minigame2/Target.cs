@@ -1,19 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Target : MonoBehaviour {
 
     public float speed = 1f;
     public Transform myTarget;
-    public Transform[] points;
+    public GameObject[] points;
+    public int currentPoint = 0;
 
     public bool go = false;
+
+    public GameObject okButton;
+
+    private ScriptMinipeliMetalli2 minipeliMetalli2;
 
 	// Use this for initialization
 	void Start () 
     {
-        myTarget = points[1];
+        myTarget.position = new Vector3(points[1].transform.position.x,points[1].transform.position.y,points[1].transform.position.z);
+        minipeliMetalli2 = GameObject.Find( "Main Camera" ).GetComponent<ScriptMinipeliMetalli2>();
+        okButton = GameObject.Find( "OKButton" );
+        okButton.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -24,10 +33,23 @@ public class Target : MonoBehaviour {
             transform.position = Vector3.MoveTowards( transform.position, myTarget.position, speed*Time.deltaTime );
         }
 
-        if(transform.position == points[1].position) 
+        if(transform.position == points[currentPoint].transform.position) 
         {
-            print("point1");
-            myTarget.position = points[2].position;
+                if(points[currentPoint].GetComponent<HitsausPoint>().enpoint == true) 
+                {
+                    go = false;
+                    myTarget = null;
+                    minipeliMetalli2.gameCounter.GetComponent<Text>().enabled = true;
+                    minipeliMetalli2.gameCounter.GetComponent<Text>().text = "Finish!";
+                    okButton.SetActive(true);
+                }
+                
+                else 
+                {   
+                    currentPoint += 1;
+                    myTarget.position = points[currentPoint].transform.position;
+                }
+
         }
 	}
 }

@@ -35,6 +35,7 @@ public class CameraScript : MonoBehaviour {
     private ScriptPlayerData playerData;
     private LevelInfo levelInfo;
 	
+
 	void Start () 
     {
         dialogueCanvas = GameObject.Find( "_DialogueCanvas" ).GetComponent<Canvas>();
@@ -55,21 +56,37 @@ public class CameraScript : MonoBehaviour {
         dialogueAnim.SetBool( "Touched", true );
         */
 
-        if(playerData.metallialaVisits < 1) 
+        //Set initial camera position
+        camTargetY.position = new Vector3(camTargetY.position.x,2.464565f,camTargetY.position.z);
+        transform.position = new Vector3(55.50998f,2.464565f,4.000003f);
+
+        if(levelInfo.levelInfo == 1 && playerData.metallialaVisits < 1 || levelInfo.levelInfo == 2 && playerData.teatteriEsitekVisits < 1) 
         {
             dialogueCanvas.enabled = true;
+
+            if(levelInfo.levelInfo == 1) 
+            {
+                playerData.metallialaVisits += 1;
+            }
+
+            if(levelInfo.levelInfo == 2) 
+            {
+                playerData.teatteriEsitekVisits += 1;
+            }
         }
+
         else 
         {
             dialogueCanvas.enabled = false;
-            playerData.metallialaVisits += 1;
             playerMovement.canControl = true;
             pauseButton.enabled = true;
         }
 
         if(playerData.winMetalliMinipeli1 == true) 
         {
-            dialogueWin.SetActive(true);
+            if(dialogueWin != null) {
+                dialogueWin.SetActive(true);
+            }            
         }
 
         dialogueText.text = "Tervetuloa "+ playerData.playerName;
@@ -201,6 +218,7 @@ public class CameraScript : MonoBehaviour {
 
     public void DialogueOK() 
     {
+        Destroy( dialogueWin );
         dialogueWin.SetActive( false );
     }
 }
