@@ -16,6 +16,11 @@ public class ScriptMinigameTest : MonoBehaviour {
     public GameObject[] numbers;
     public GameObject[] transitions;
 
+    public float maxX;
+    public float maxY;
+    public float minX;
+    public float minY;
+
     public GameObject touchParticle;
 
     public bool isHolding = false;
@@ -38,8 +43,11 @@ public class ScriptMinigameTest : MonoBehaviour {
     public bool parsec13 = true;
     public bool parsec14 = true;
 
-    public float timer;
-    public float timeMultiplier = 150f;
+    public float timer;                                                     //The game's global timer
+    public float startTimer;                                                //Countdown for when the game starts
+    public float timeMultiplier = 150f;                                     //How fast the timer bar reduces
+    public Text gameCounter;                                                //Text for dispalying the game start countdown
+    public bool startGame = false;
 
     public bool paused = false;
     public bool win = false;
@@ -70,6 +78,7 @@ public class ScriptMinigameTest : MonoBehaviour {
         playerData = GameObject.Find( "PlayerData" ).GetComponent<ScriptPlayerData>();
         yourBest.text = playerData.scoreMetalliMinipeli1.ToString();
         gameWinImage.SetActive( false );
+        gameCounter = GameObject.Find( "StartCountDown" ).GetComponent<Text>();
         //hiScore = playerData.scoreMetalliMinipeli1 = hiScore;
         PlayerPrefs.GetInt( "MetalliMinipeli1HiScore", hiScore );
 	}
@@ -77,9 +86,40 @@ public class ScriptMinigameTest : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
-        timer += Time.deltaTime;
 
-        if(!paused && !win) 
+        startTimer += Time.deltaTime;
+
+        if(startTimer > 1f && startTimer < 2f) 
+        {
+            gameCounter.GetComponent<Text>().text = "3";
+        }
+
+        if(startTimer > 2f && startTimer < 3f) 
+        {
+            gameCounter.GetComponent<Text>().text = "2";
+        }
+
+        if(startTimer > 3f && startTimer < 4f) 
+        {
+            gameCounter.GetComponent<Text>().text = "1";
+        }
+
+        if(startTimer > 4f && startTimer < 5f) 
+        {
+            gameCounter.GetComponent<Text>().text = "Start!";
+        }
+
+        if(startTimer > 5f && startTimer < 6f) 
+        {
+            gameCounter.GetComponent<Text>().enabled = false;
+            startGame = true;
+        }
+
+        if(startGame) {
+            timer += Time.deltaTime;
+        }
+
+        if(!paused && !win && startGame) 
         {
             bar.fillAmount -= Time.deltaTime/timeMultiplier;
         }
@@ -133,6 +173,7 @@ public class ScriptMinigameTest : MonoBehaviour {
         if(timer >= interval1 && timer < interval2 && parsec1 == true) 
         {
             numbers[0].SetActive( true );
+            numbers[0].transform.localPosition = new Vector2(Random.Range(minX,maxX),Random.Range(minY,maxY));
             parsec1 = false;
             timer = 0f;
             tapCount = 1;
@@ -142,6 +183,7 @@ public class ScriptMinigameTest : MonoBehaviour {
         if(timer >= interval1 && timer < interval2 && parsec2 == true && parsec1 == false) 
         {
             numbers[0].SetActive( true );
+            numbers[0].transform.localPosition = new Vector2(Random.Range(minX,maxX),Random.Range(minY,maxY));
             numbers[0].GetComponent<NumberButtonScript>().timer = 0f;
             parsec2 = false;
             timer = 0f;
@@ -151,6 +193,7 @@ public class ScriptMinigameTest : MonoBehaviour {
         if(timer >= interval1 && timer < interval2 && parsec3 == true && parsec2 == false) 
         {
             numbers[0].SetActive( true );
+            numbers[0].transform.localPosition = new Vector2(Random.Range(minX,maxX),Random.Range(minY,maxY));
             numbers[0].GetComponent<NumberButtonScript>().timer = 0f;
             parsec3 = false;
             timer = 0f;
@@ -160,6 +203,7 @@ public class ScriptMinigameTest : MonoBehaviour {
         if(timer >= interval1 && timer < interval2 && parsec4 == true && parsec3 == false) 
         {
             numbers[0].SetActive( true );
+            numbers[0].transform.localPosition = new Vector2(Random.Range(minX,maxX),Random.Range(minY,maxY));
             numbers[0].GetComponent<NumberButtonScript>().timer = 0f;
             parsec4 = false;
             timer = 0f;
@@ -253,12 +297,16 @@ public class ScriptMinigameTest : MonoBehaviour {
             pauseMenu.enabled = true;
             paused = true;
             pauseMenuAnim.SetBool("Touched", true);
+            startGame = false;
+            
             //Time.timeScale = 0f;
         }
         else {
             pauseMenu.enabled = false;
             paused = false;
             pauseMenuAnim.SetBool("Touched", false);
+            startGame = true;
+            
             //Time.timeScale = 1f;
         }
         
