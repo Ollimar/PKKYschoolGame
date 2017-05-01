@@ -754,7 +754,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400028, guid: 04ce0b8751894b640b64110ab703930c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.022647858
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 04ce0b8751894b640b64110ab703930c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -762,23 +762,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 04ce0b8751894b640b64110ab703930c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.028698444
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 04ce0b8751894b640b64110ab703930c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 04ce0b8751894b640b64110ab703930c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0.5000004
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 04ce0b8751894b640b64110ab703930c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 04ce0b8751894b640b64110ab703930c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.8660252
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 04ce0b8751894b640b64110ab703930c, type: 3}
       propertyPath: m_RootOrder
@@ -790,7 +790,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400028, guid: 04ce0b8751894b640b64110ab703930c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: 60.000004
       objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 04ce0b8751894b640b64110ab703930c, type: 3}
       propertyPath: m_Controller
@@ -13490,6 +13490,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpVelocity: 15
+  jumpCount: 0
   canControl: 1
   facingRight: 1
   isGrounded: 0
@@ -13512,6 +13513,7 @@ MonoBehaviour:
   hats:
   - {fileID: 0}
   - {fileID: 0}
+  playerGraphics: {fileID: 116267531}
   hatNumber: 0
 --- !u!1 &2084256259
 GameObject:

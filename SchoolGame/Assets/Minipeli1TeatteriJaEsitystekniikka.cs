@@ -142,6 +142,11 @@ public class Minipeli1TeatteriJaEsitystekniikka : MonoBehaviour {
          pauseAnim.SetBool("Touched",true);
     }
 
+
+    public void Retry() {
+        Application.LoadLevel("Minipeli1TeatterijaEsitysTekniikka");
+    }
+
     public void Quit() {
         Application.LoadLevel("TeatteriJaEsitystekniikka");
     }

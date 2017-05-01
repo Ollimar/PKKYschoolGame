@@ -8,6 +8,9 @@ public class ScriptMinipeliMetalli2 : MonoBehaviour {
     public GameObject touchParticle;
     public GameObject hitsausJalki;
 
+    public GameObject[] hitsauskohteet;
+    public int puzzlenum = 0;
+
     public Transform target;
     public Transform parent;
 
@@ -19,6 +22,16 @@ public class ScriptMinipeliMetalli2 : MonoBehaviour {
     public Text gameCounter;
     public float startTimer;
 
+    public Text scoreTable;
+    public Text hiScoreTable;
+
+    public int score = 0;
+    public static int hiScore;
+
+    public GameObject gameWinScreen;
+
+    private ScriptPlayerData playerData;
+
     // Use this for initialization
     void Start() 
     {
@@ -29,6 +42,17 @@ public class ScriptMinipeliMetalli2 : MonoBehaviour {
        gameCounter = GameObject.Find( "Text" ).GetComponent<Text>();
        startTimer = 0f;
        parent = GameObject.FindGameObjectWithTag( "parent" ).transform;
+       scoreTable = GameObject.Find( "scoreTable" ).GetComponent<Text>();
+       hiScoreTable = GameObject.Find( "hiScoreTable" ).GetComponent<Text>();
+       hiScoreTable.text = hiScore.ToString();
+       gameWinScreen = GameObject.Find( "Voittoruutu" );
+       gameWinScreen.SetActive( false );
+       playerData = GameObject.Find( "PlayerData" ).GetComponent<ScriptPlayerData>();
+       PlayerPrefs.SetInt("Metalli2HiScore",hiScore);
+       if(PlayerPrefs.HasKey("Metalli2HiScore")) {
+            hiScore = PlayerPrefs.GetInt("Metalli2HiScore");
+        }
+
     }
 
     // Update is called once per frame
@@ -36,6 +60,11 @@ public class ScriptMinipeliMetalli2 : MonoBehaviour {
     {
   
         startTimer += Time.deltaTime;
+
+        if(startTimer < 1f) 
+        {
+            gameCounter.GetComponent<Text>().text = "";
+        }
 
         if(startTimer > 1f && startTimer < 2f) 
         {
@@ -83,16 +112,17 @@ public class ScriptMinipeliMetalli2 : MonoBehaviour {
                     touchParticle.transform.position = hit.point;
                     GameObject jalki = hitsausJalki;
                     Instantiate( jalki, new Vector3( hit.point.x, hit.point.y, -0.5f ), transform.rotation );
-                    jalki.transform.parent = parent.transform;
+                    //jalki.transform.parent = parent.transform;
                 } 
 
             }
 
-            if ( hit.transform.tag == "HitsausJalki" ) 
+            if (hit.transform.tag == "HitsausJalki") 
                 {
                     if ( Input.touchCount > 0 ) 
                     {
-                        print( "hitsaan" );
+                        touchParticle.SetActive( true );
+                        touchParticle.transform.position = hit.point;
                         if(hit.transform.localScale.x < 1f) {
                             hit.transform.localScale += new Vector3( 0.1f, 0.1f, 0.1f )*Time.deltaTime;
                         } 
@@ -100,18 +130,30 @@ public class ScriptMinipeliMetalli2 : MonoBehaviour {
                 }
 
             // Maybe try RayCastAll for hitting target as well?
-                if ( hit.transform.name == "Target" ) 
+                if (hit.transform.name == "Target") 
                 {
                     if ( Input.touchCount > 0 ) 
                     {
-                        print( "correct" );
+                        touchParticle.SetActive( true );
+                        touchParticle.transform.position = hit.point;
+                        GameObject jalki = hitsausJalki;
+                        Instantiate( jalki, new Vector3( hit.point.x, hit.point.y, -0.5f ), transform.rotation );
+                        score += 1;
+                        scoreTable.text = score.ToString();
+                        //jalki.transform.parent = parent.transform;
                     }
                 }
             }
         }
         else 
         {
-            touchParticle.SetActive( false );
+            touchParticle.SetActive(false);
+        }
+
+        if(score > hiScore) {
+            hiScore = score;
+            hiScoreTable.text = "HI-SCORE: "+hiScore.ToString();
+            PlayerPrefs.SetInt( "Metalli2HiScore", hiScore);
         }
     }
 
@@ -122,20 +164,73 @@ public class ScriptMinipeliMetalli2 : MonoBehaviour {
             paused = true;
             pauseMenuAnim.SetBool("Touched", true);
             target.GetComponent<Target>().go = false;
-            //Time.timeScale = 0f;
+            
         }
         else {
             pauseMenu.enabled = false;
             paused = false;
             pauseMenuAnim.SetBool("Touched", false);
             target.GetComponent<Target>().go = true;
-            //Time.timeScale = 1f;
+            
         }
         
     }
 
+    public void NextPuzzle() 
+    {
+        if(puzzlenum<=1) 
+        {
+            hitsauskohteet[puzzlenum].SetActive( false );
+            puzzlenum += 1;
+            hitsauskohteet[puzzlenum].SetActive( true );
+            target = GameObject.Find( "Target" ).transform;
+            target.GetComponent<Target>().go = true;
+            GameObject[] jalkis = GameObject.FindGameObjectsWithTag("HitsausJalki");
+
+            for (int i=0; i<jalkis.Length; i++) 
+            {
+                jalkis[i].SetActive( false );
+            }
+        }
+        else 
+        {
+            playerData.winMetalliMinipeli2 = true;
+            target.GetComponent<Target>().go = false;
+            target.gameObject.SetActive( false );
+            GameObject.Find( "Text" ).SetActive( false );
+            GameObject.Find( "OKButton" ).SetActive( false );
+            gameWinScreen.SetActive( true );
+        }
+
+
+        //startTimer = 0f;
+    }
+
+    public static void SaveData() {
+        //PlayerPrefs.SetInt("Metalli2HiScore",hiScore);
+    }
+
+    public void Retry() 
+    {
+        Application.LoadLevel("Minipeli2Metalli");
+    }
+
     public void Menu() 
     {
-        Application.LoadLevel("Metalliala");
+        if(score > hiScore) 
+        {
+            score = hiScore;
+            Application.LoadLevel("Metalliala");
+        }
+        
+        else 
+        {
+            Application.LoadLevel("Metalliala");
+        }
+    }
+
+    public void GameOver() 
+    {
+
     }
 }

@@ -232,7 +232,7 @@ public class ScriptMinigameTest : MonoBehaviour {
             timer = 0f;
         }
 
-        if(timer >=9 && timer < interval2 && parsec7 == true &&  parsec6 == false) 
+        if(timer >=6 && timer < interval2 && parsec7 == true &&  parsec6 == false) 
         {
             tapCount = 1;
             numbers[0].SetActive( true );

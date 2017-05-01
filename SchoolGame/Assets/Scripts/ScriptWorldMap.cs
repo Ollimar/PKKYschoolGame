@@ -20,6 +20,7 @@ public class ScriptWorldMap : MonoBehaviour
     public Canvas metallialaImage;
     public Canvas teatterEsitekImage;
     public GameObject menu;
+    public GameObject quitScreen;
 
     public Text playerName;
 
@@ -43,6 +44,9 @@ public class ScriptWorldMap : MonoBehaviour
         menu = GameObject.Find( "Menu" );
         menu.SetActive(false);
 
+        quitScreen = GameObject.Find( "QuitImage" );
+        quitScreen.SetActive( false );
+
         playerData = GameObject.Find( "PlayerData" ).GetComponent<ScriptPlayerData>();
         playerName.text = playerData.name.ToString();
         
@@ -55,48 +59,42 @@ public class ScriptWorldMap : MonoBehaviour
         Ray ray;
         RaycastHit hit;
 
-        #if !UNITY_ANDROID
+        //#if !UNITY_ANDROID
 
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if(Physics.Raycast(ray, out hit, Mathf.Infinity)) 
-        {
-            if ( hit.transform.tag == "Metalliala" ) 
-            {
-                if(Input.GetMouseButtonDown(0)) 
-                {
+        if ( Physics.Raycast( ray, out hit, Mathf.Infinity ) ) {
+            if ( hit.transform.tag == "Metalliala" ) {
+                if ( Input.GetMouseButtonDown( 0 ) ) {
                     metallialaImage.enabled = true;
                     MetallialaAnim.SetBool( "Touched", true );
                 }
             }
 
-             if ( hit.transform.name == "Teatteri&Esitystekniikka" ) 
-            {
-                if(Input.GetMouseButtonDown(0)) 
-                {
+            if ( hit.transform.name == "Teatteri&Esitystekniikka" ) {
+                if ( Input.GetMouseButtonDown( 0 ) ) {
                     teatterEsitekImage.enabled = true;
                     teatterEsitekAnim.SetBool( "Touched", true );
                 }
             }
 
-         if ( hit.transform.tag == "ground" && Input.touchCount <= 1) 
-            {
-                if(Input.GetMouseButtonDown(0)) 
-                {
+            if ( hit.transform.tag == "ground" && Input.touchCount <= 1 ) {
+                if ( Input.GetMouseButtonDown( 0 ) ) {
                     hitPosition = Input.mousePosition;
-                    cameraPosition = new Vector3(transform.position.x,Camera.main.transform.position.y,transform.position.z);
+                    cameraPosition = new Vector3( transform.position.x, Camera.main.transform.position.y, transform.position.z );
                     print( "Touch" );
                 }
 
-                if(Input.GetMouseButton(0)) 
-                {
+                if ( Input.GetMouseButton( 0 ) ) {
                     currentPosition = Input.mousePosition;
                     Drag();
                     print( "Touch" );
                 }
             }
-        #else
+        }
+        //#else
 
+        /*
         if(Input.touchCount > 0) 
         {
             ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
@@ -135,8 +133,8 @@ public class ScriptWorldMap : MonoBehaviour
               }
            }
         }
-
         #endif
+        */
 
         //Camera Zoom
 
@@ -182,7 +180,7 @@ public class ScriptWorldMap : MonoBehaviour
         pointerTeatteriEsitek.Translate(Vector3.up*pointerSpeed*Time.deltaTime);
 	}
 
-    void Drag() 
+    public void Drag() 
     {
         Vector3 direction = Camera.main.ScreenToWorldPoint(currentPosition) - Camera.main.ScreenToWorldPoint(hitPosition);
         direction = direction * -1;
@@ -221,5 +219,19 @@ public class ScriptWorldMap : MonoBehaviour
     public void EnterTeatteriJaEsitek() 
     {
         Application.LoadLevel("TeatteriJaEsitystekniikka");
+    }
+
+    public void QuitButton() 
+    {
+        quitScreen.SetActive(true);
+    }
+
+    public void NotQuitGame() {
+        quitScreen.SetActive(false);
+    }
+
+    public void QuitGame() 
+    {
+        Application.Quit();
     }
 }

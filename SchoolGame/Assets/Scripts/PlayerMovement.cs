@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour {
 
     public float speed = 10f;
     public float jumpVelocity = 10f;
+    public int   jumpCount = 0;
 
     public bool canControl = true;
     public bool facingRight = true;
@@ -36,6 +37,8 @@ public class PlayerMovement : MonoBehaviour {
 
     public GameObject[] platforms;
     public GameObject[] hats;
+
+    public GameObject playerGraphics;
 
     public int hatNumber;
 
@@ -108,6 +111,10 @@ public class PlayerMovement : MonoBehaviour {
     {
         isGrounded = Physics2D.OverlapCircle(circlePos.position,circleRadius,whatIsGround);
 
+        if(isGrounded) 
+        {
+            jumpCount = 0;
+        }
 
         if(canControl) 
         {
@@ -146,10 +153,11 @@ public class PlayerMovement : MonoBehaviour {
 
     public void Jump() {
 
-        if(isGrounded && canControl) 
+        if(isGrounded && canControl && jumpCount <1) 
         {
             print( "Jump" );
             myRB.velocity += jumpVelocity * Vector2.up;
+            jumpCount += 1;
 
             if (canEnterMetalliala) {
                 Application.LoadLevel("Minipeli1Metalli");
@@ -171,11 +179,13 @@ public class PlayerMovement : MonoBehaviour {
         float ver = Input.GetAxis("Vertical");
 
         if(hor > 0.1 && !facingRight) {
+            playerGraphics.transform.Rotate( Vector3.up * 270f );
             Flip();
         }
 
         if(hor < -0.1 && facingRight) {
-            Flip();
+           playerGraphics.transform.Rotate(Vector3.up*270f);
+           Flip();
         }
         hInput = horizontalInput;
     }
@@ -183,7 +193,7 @@ public class PlayerMovement : MonoBehaviour {
     void Flip() 
     {
         facingRight = !facingRight;
-        transform.Rotate( Vector3.up * 180f );
+        transform.Rotate( Vector3.up * 180f );  
     }
 
     void OnTriggerEnter2D(Collider2D other) {

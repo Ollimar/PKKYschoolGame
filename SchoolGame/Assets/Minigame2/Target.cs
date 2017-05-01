@@ -12,6 +12,7 @@ public class Target : MonoBehaviour {
 
     public bool go = false;
 
+    public Text gameCounter;
     public GameObject okButton;
 
     private ScriptMinipeliMetalli2 minipeliMetalli2;
@@ -19,10 +20,16 @@ public class Target : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
     {
+        points = GameObject.FindGameObjectsWithTag("HitsausPoint");
         myTarget.position = new Vector3(points[1].transform.position.x,points[1].transform.position.y,points[1].transform.position.z);
         minipeliMetalli2 = GameObject.Find( "Main Camera" ).GetComponent<ScriptMinipeliMetalli2>();
         okButton = GameObject.Find( "OKButton" );
         okButton.SetActive(false);
+        //minipeliMetalli2.gameCounter.GetComponent<Text>().enabled = false;
+        minipeliMetalli2.startTimer = 0f;
+        gameCounter = GameObject.Find( "Text" ).GetComponent<Text>();
+        gameCounter.GetComponent<Text>().enabled = true;
+        go = false;
 	}
 	
 	// Update is called once per frame
